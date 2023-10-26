@@ -285,6 +285,7 @@ const userData_SKN: Array<playerInfo> = [
         wave: '20',
         src: 'https://www.youtube.com/watch?v=03BiVciXuew&ab_channel=AbiyyuChannel',
     },
+
 ]
 const userData_NYN: Array<playerInfo> = [
     {
@@ -340,6 +341,7 @@ const userData_JN: Array<playerInfo> = [
         wave: '17',
         src: 'https://www.youtube.com/watch?v=Deg5QdBUBv8&ab_channel=GamingTamari',
     },
+
 ]
 
 

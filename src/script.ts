@@ -46,6 +46,33 @@ const skN = document.querySelector(".n-sk") as HTMLTableSectionElement;
 const nyN = document.querySelector(".n-ny") as HTMLTableSectionElement;
 const jN = document.querySelector(".n-j") as HTMLTableSectionElement;
 
+// LEADERBOARD
+const xltH_board = document.querySelector('#leaderboard_xltH') as HTMLElement;
+const xlrH_board = document.querySelector('#leaderboard_xlrH') as HTMLElement;
+const skH_board = document.querySelector('#leaderboard_skH') as HTMLElement;
+const nyH_board = document.querySelector('#leaderboard_nyH') as HTMLElement;
+const jH_board = document.querySelector('#leaderboard_jH') as HTMLElement;
+
+const xltHV = document.querySelector("#xltHV") as HTMLElement;
+const xlrHV = document.querySelector("#xlrHV") as HTMLElement;
+const skHV = document.querySelector("#skHV") as HTMLElement;
+const nyHV = document.querySelector("#nyHV") as HTMLElement;
+const jHV = document.querySelector("#jHV") as HTMLElement;
+
+
+const xltN_board = document.querySelector('#leaderboard_xltN') as HTMLElement;
+const xlrN_board = document.querySelector('#leaderboard_xlrN') as HTMLElement;
+const skN_board = document.querySelector('#leaderboard_skN') as HTMLElement;
+const nyN_board = document.querySelector('#leaderboard_nyN') as HTMLElement;
+const jN_board = document.querySelector('#leaderboard_jN') as HTMLElement;
+
+const xltNV = document.querySelector("#xltNV") as HTMLElement;
+const xlrNV = document.querySelector("#xlrNV") as HTMLElement;
+const skNV = document.querySelector("#skNV") as HTMLElement;
+const nyNV = document.querySelector("#nyNV") as HTMLElement;
+const jNV = document.querySelector("#jNV") as HTMLElement;
+
+
 
 // Content Entry Logic
 interface RecordInfo {
@@ -207,3 +234,30 @@ dataSubmission(userData_SKN, skN);
 dataSubmission(userData_NYN, nyN);
 dataSubmission(userData_JN, jN);
 
+// LEADERBOARD ENTRY
+
+const leaderboardRecord = [xltH_board, xlrH_board, skH_board, nyH_board, jH_board, xltN_board, xlrN_board, skN_board, nyN_board, jN_board]
+
+const leaderboardRecordValue = [userData_JapanH[0].player, userData_RomeH[0].player, userData_SKH[0].player, userData_NYH[0].player, userData_JH[0].player, userData_JapanN[0].player, userData_RomeN[0].player, userData_SKN[0].player, userData_NYN[0].player, userData_JN[0].player]
+
+for (let i = 0; i < leaderboardRecord.length; i++) {
+    leaderboardRecord[i].textContent = leaderboardRecordValue[i];
+}
+
+// Simplified Entry
+const leaderboardHardWave = [xltHV, xlrHV, skHV, nyHV, jHV, xltNV, xlrNV, skNV, nyNV, jNV];
+
+const leaderboardHardWaveValue = [userData_JapanH[0].wave, userData_RomeH[0].wave, userData_SKH[0].wave, userData_NYH[0].wave, userData_JH[0].wave, userData_JapanN[0].wave, userData_RomeN[0].wave, userData_SKN[0].wave, userData_NYN[0].wave, userData_JN[0].wave]
+
+for (let i = 0; i < leaderboardHardWave.length; i++) {
+    if (parseInt(leaderboardHardWaveValue[i]) >= 90) {
+        leaderboardHardWave[i].classList.add("h2", "text-bold", "text-danger")
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i]
+    }
+    else if (parseInt(leaderboardHardWaveValue[i]) >= 70) {
+        leaderboardHardWave[i].classList.add("h4", "text-bold", "text-warning")
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i]
+    } else {
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i]
+    }
+}

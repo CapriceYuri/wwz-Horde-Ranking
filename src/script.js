@@ -40,6 +40,27 @@ const romeN = document.querySelector(".n-rome");
 const skN = document.querySelector(".n-sk");
 const nyN = document.querySelector(".n-ny");
 const jN = document.querySelector(".n-j");
+// LEADERBOARD
+const xltH_board = document.querySelector('#leaderboard_xltH');
+const xlrH_board = document.querySelector('#leaderboard_xlrH');
+const skH_board = document.querySelector('#leaderboard_skH');
+const nyH_board = document.querySelector('#leaderboard_nyH');
+const jH_board = document.querySelector('#leaderboard_jH');
+const xltHV = document.querySelector("#xltHV");
+const xlrHV = document.querySelector("#xlrHV");
+const skHV = document.querySelector("#skHV");
+const nyHV = document.querySelector("#nyHV");
+const jHV = document.querySelector("#jHV");
+const xltN_board = document.querySelector('#leaderboard_xltN');
+const xlrN_board = document.querySelector('#leaderboard_xlrN');
+const skN_board = document.querySelector('#leaderboard_skN');
+const nyN_board = document.querySelector('#leaderboard_nyN');
+const jN_board = document.querySelector('#leaderboard_jN');
+const xltNV = document.querySelector("#xltNV");
+const xlrNV = document.querySelector("#xlrNV");
+const skNV = document.querySelector("#skNV");
+const nyNV = document.querySelector("#nyNV");
+const jNV = document.querySelector("#jNV");
 function addRecord(obj, chapter) {
     const tempRow = document.createElement("tr");
     tempRow.classList.add("text-center", "align-middle");
@@ -181,3 +202,25 @@ dataSubmission(userData_RomeN, romeN);
 dataSubmission(userData_SKN, skN);
 dataSubmission(userData_NYN, nyN);
 dataSubmission(userData_JN, jN);
+// LEADERBOARD ENTRY
+const leaderboardRecord = [xltH_board, xlrH_board, skH_board, nyH_board, jH_board, xltN_board, xlrN_board, skN_board, nyN_board, jN_board];
+const leaderboardRecordValue = [userData_JapanH[0].player, userData_RomeH[0].player, userData_SKH[0].player, userData_NYH[0].player, userData_JH[0].player, userData_JapanN[0].player, userData_RomeN[0].player, userData_SKN[0].player, userData_NYN[0].player, userData_JN[0].player];
+for (let i = 0; i < leaderboardRecord.length; i++) {
+    leaderboardRecord[i].textContent = leaderboardRecordValue[i];
+}
+// Simplified Entry
+const leaderboardHardWave = [xltHV, xlrHV, skHV, nyHV, jHV, xltNV, xlrNV, skNV, nyNV, jNV];
+const leaderboardHardWaveValue = [userData_JapanH[0].wave, userData_RomeH[0].wave, userData_SKH[0].wave, userData_NYH[0].wave, userData_JH[0].wave, userData_JapanN[0].wave, userData_RomeN[0].wave, userData_SKN[0].wave, userData_NYN[0].wave, userData_JN[0].wave];
+for (let i = 0; i < leaderboardHardWave.length; i++) {
+    if (parseInt(leaderboardHardWaveValue[i]) >= 90) {
+        leaderboardHardWave[i].classList.add("h2", "text-bold", "text-danger");
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
+    }
+    else if (parseInt(leaderboardHardWaveValue[i]) >= 70) {
+        leaderboardHardWave[i].classList.add("h4", "text-bold", "text-warning");
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
+    }
+    else {
+        leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
+    }
+}
