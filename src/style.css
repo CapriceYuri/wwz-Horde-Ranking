@@ -12002,6 +12002,10 @@ td {
           backdrop-filter: blur(20px);
 }
 
+a {
+  text-decoration: none;
+}
+
 .BOX0 {
   display: block;
 }
