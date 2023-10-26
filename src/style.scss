@@ -1,0 +1,101 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Layout Styling
+body {
+    background-color: #1e1e1e;
+}
+
+.table-img {
+    max-height: 400px;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+    color: orange;
+}
+
+table,
+tbody,
+tr,
+th,
+td {
+    background-color: rgba(0, 0, 0, 0) !important;
+    backdrop-filter: blur(20px)
+}
+
+// Contents 
+.BOX0 {
+    display: block;
+}
+
+.BOX1 {
+    display: none;
+}
+
+.BOX2 {
+    display: none;
+}
+
+// Keyframes
+.vibrate {
+    animation: vibrate-1 0.3s linear infinite;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.flick {
+    animation: flicker-1 0.75s linear infinite;
+}
+
+@keyframes flicker-1 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-1px, 1px);
+    }
+
+    40% {
+        transform: translate(-1px, -1px);
+    }
+
+    60% {
+        transform: translate(1px, 1px);
+    }
+
+    80% {
+        transform: translate(1px, -1px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
