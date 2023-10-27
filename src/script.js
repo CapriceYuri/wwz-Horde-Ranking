@@ -172,20 +172,42 @@ function addRecord(obj, chapter) {
 function recordSort(a, b) {
     return a.wave - b.wave;
 }
+function checkSameStanding(obj) {
+    let first = parseInt(obj[0].wave);
+    let second = 0;
+    let third = 0;
+    for (let i = 1; i < obj.length; i++) {
+        if (parseInt(obj[i].wave) > first) {
+            second = first;
+            first = parseInt(obj[i].wave);
+        }
+        else if (parseInt(obj[i].wave) > second && parseInt(obj[i].wave) < first) {
+            third = second;
+            second = parseInt(obj[i].wave);
+        }
+        else if (parseInt(obj[i].wave) > third && parseInt(obj[i].wave) < second) {
+            third = parseInt(obj[i].wave);
+        }
+    }
+    const finalizedfirst = first.toString();
+    const finalizedsecond = second.toString();
+    const finalizedthird = third.toString();
+    for (let j = 0; j < obj.length; j++) {
+        if (obj[j].wave === finalizedfirst) {
+            obj[j].medal = 'First';
+        }
+        if (obj[j].wave === finalizedsecond) {
+            obj[j].medal = 'Second';
+        }
+        if (obj[j].wave === finalizedthird) {
+            obj[j].medal = 'Third';
+        }
+    }
+}
 // DATA ENTRY FUNCTION
 function dataSubmission(arr, location) {
     let sorting = arr.sort(recordSort).reverse();
-    for (let i = 0; i < sorting.length; i++) {
-        if (i === 0) {
-            sorting[i].medal = "First";
-        }
-        if (i === 1) {
-            sorting[i].medal = "Second";
-        }
-        if (i === 2) {
-            sorting[i].medal = "Third";
-        }
-    }
+    checkSameStanding(arr);
     for (let i = 0; i < sorting.length; i++) {
         addRecord(sorting[i], location);
     }
@@ -203,6 +225,7 @@ dataSubmission(userData_SKN, skN);
 dataSubmission(userData_NYN, nyN);
 dataSubmission(userData_JN, jN);
 // LEADERBOARD ENTRY
+const skullType = document.querySelectorAll(".skull");
 const leaderboardRecord = [xltH_board, xlrH_board, skH_board, nyH_board, jH_board, xltN_board, xlrN_board, skN_board, nyN_board, jN_board];
 const leaderboardRecordValue = [userData_JapanH[0].player, userData_RomeH[0].player, userData_SKH[0].player, userData_NYH[0].player, userData_JH[0].player, userData_JapanN[0].player, userData_RomeN[0].player, userData_SKN[0].player, userData_NYN[0].player, userData_JN[0].player];
 for (let i = 0; i < leaderboardRecord.length; i++) {
@@ -213,14 +236,29 @@ const leaderboardHardWave = [xltHV, xlrHV, skHV, nyHV, jHV, xltNV, xlrNV, skNV, 
 const leaderboardHardWaveValue = [userData_JapanH[0].wave, userData_RomeH[0].wave, userData_SKH[0].wave, userData_NYH[0].wave, userData_JH[0].wave, userData_JapanN[0].wave, userData_RomeN[0].wave, userData_SKN[0].wave, userData_NYN[0].wave, userData_JN[0].wave];
 for (let i = 0; i < leaderboardHardWave.length; i++) {
     if (parseInt(leaderboardHardWaveValue[i]) >= 90) {
-        leaderboardHardWave[i].classList.add("h2", "text-bold", "text-danger");
+        skullType[i].attributes[0].value = "images/yellowskull.png";
+        skullType[i].classList.add("vibrate");
+        leaderboardHardWave[i].classList.add("h2", "text-bold", "text-warning");
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
     }
     else if (parseInt(leaderboardHardWaveValue[i]) >= 70) {
-        leaderboardHardWave[i].classList.add("h4", "text-bold", "text-warning");
+        skullType[i].attributes[0].textContent = "images/redskull.png";
+        skullType[i].classList.add("flick");
+        leaderboardHardWave[i].classList.add("h4", "text-bold", "text-danger");
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
     }
     else {
+        skullType[i].attributes[0].value = "images/whiteskull.png";
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
     }
 }
+let unique = [];
+for (let obj of userData_JN) {
+    unique.push(parseInt(obj.wave));
+}
+function checkDup(value, index, arr) {
+    return arr.indexOf(value) === index;
+}
+const final = unique.filter(checkDup);
+console.log(unique);
+console.log(final);

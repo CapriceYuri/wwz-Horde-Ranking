@@ -242,12 +242,6 @@ const userData_RomeN = [
 ];
 const userData_SKN = [
     {
-        player: 'Avoki',
-        wave: '101',
-        src: 'https://www.youtube.com/watch?v=KgaB9Hxr0_A&ab_channel=luisfelipemognon',
-        member: ['bolaxadomar', 'CristianKD_', 'Mano_Pipoca']
-    },
-    {
         player: 'BiggiBossss',
         wave: '69',
         src: 'https://www.youtube.com/watch?v=OHzrAOsY7C4&ab_channel=BiggiBossss-%D0%9D%D0%B5%D0%94%D0%BE%D0%A1%D1%82%D1%80%D0%B8%D0%BC%D1%8B',
@@ -272,6 +266,12 @@ const userData_SKN = [
         player: 'Abiyu',
         wave: '20',
         src: 'https://www.youtube.com/watch?v=03BiVciXuew&ab_channel=AbiyyuChannel',
+    },
+    {
+        player: 'Avoki',
+        wave: '101',
+        src: 'https://www.youtube.com/watch?v=KgaB9Hxr0_A&ab_channel=luisfelipemognon',
+        member: ['bolaxadomar', 'CristianKD_', 'Mano_Pipoca']
     },
 ];
 const userData_NYN = [
