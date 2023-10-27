@@ -136,7 +136,7 @@ function addRecord(obj: RecordInfo, chapter: Element): void {
         teamBtn.setAttribute("type", "btn")
         teamBtn.setAttribute("data-bs-toggle", "dropdown");
         const teamUL = document.createElement("ul");
-        teamUL.classList.add("dropdown-menu", "z-3", "bg-secondary", "text-center", "fw-bold");
+        teamUL.classList.add("dropdown-menu", "z-3", "bg-dark", "text-center", "fw-bold");
 
         const member1 = document.createElement("li")
         member1.classList.add('dropdown-item-text', 'text-light')
@@ -294,17 +294,28 @@ for (let i = 0; i < leaderboardHardWave.length; i++) {
     }
 }
 
-let unique: Array<number> = []
+// LIGHT & DARK MODE
+const lightModeBtn = document.querySelector("#light-mode") as HTMLButtonElement;
+const darkModeBtn = document.querySelector("#dark-mode") as HTMLButtonElement;
+const pageBody = document.querySelector("body") as HTMLBodyElement;
 
-for (let obj of userData_JN) {
-    unique.push(parseInt(obj.wave))
-}
+lightModeBtn.addEventListener('click', () => {
+    pageBody.style.backgroundColor = "#909090";
+    darkModeBtn.style.display = "block";
+    lightModeBtn.style.display = "none";
 
-function checkDup(value: number, index: number, arr: Array<number>) {
-    return arr.indexOf(value) === index
-}
+    leaderboardRecord.forEach(ele => ele.classList.add("text-dark", "transition"))
 
-const final = unique.filter(checkDup)
 
-console.log(unique)
-console.log(final)
+
+})
+
+darkModeBtn.addEventListener('click', () => {
+    pageBody.style.backgroundColor = "#1e1e1e"
+    darkModeBtn.style.display = "none";
+    lightModeBtn.style.display = "block";
+
+    leaderboardRecord.forEach(ele => ele.classList.remove("text-dark"))
+    leaderboardRecord.forEach(ele => ele.classList.add("text-light"))
+
+})
