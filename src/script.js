@@ -105,7 +105,7 @@ function addRecord(obj, chapter) {
     }
     if (obj.member !== undefined) {
         const teamBtn = document.createElement('button');
-        teamBtn.classList.add("btn", "dropdown-toggle", "text-light");
+        teamBtn.classList.add("btn", "dropdown-toggle", "text-light", "rounded-pill");
         teamBtn.textContent = obj.player;
         teamBtn.style.backgroundColor = "#1e1e1e";
         teamBtn.style.borderRadius = "0";
@@ -257,7 +257,7 @@ const lightModeBtn = document.querySelector("#light-mode");
 const darkModeBtn = document.querySelector("#dark-mode");
 const pageBody = document.querySelector("body");
 lightModeBtn.addEventListener('click', () => {
-    pageBody.style.backgroundColor = "#909090";
+    pageBody.style.backgroundColor = "#6CB4EE";
     darkModeBtn.style.display = "block";
     lightModeBtn.style.display = "none";
     leaderboardRecord.forEach(ele => ele.classList.add("text-dark", "transition"));

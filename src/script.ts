@@ -128,7 +128,7 @@ function addRecord(obj: RecordInfo, chapter: Element): void {
     }
     if (obj.member !== undefined) {
         const teamBtn = document.createElement('button');
-        teamBtn.classList.add("btn", "dropdown-toggle", "text-light");
+        teamBtn.classList.add("btn", "dropdown-toggle", "text-light", "rounded-pill");
         teamBtn.textContent = obj.player;
         teamBtn.style.backgroundColor = "#1e1e1e"
         teamBtn.style.borderRadius = "0"
@@ -300,7 +300,7 @@ const darkModeBtn = document.querySelector("#dark-mode") as HTMLButtonElement;
 const pageBody = document.querySelector("body") as HTMLBodyElement;
 
 lightModeBtn.addEventListener('click', () => {
-    pageBody.style.backgroundColor = "#909090";
+    pageBody.style.backgroundColor = "#6CB4EE";
     darkModeBtn.style.display = "block";
     lightModeBtn.style.display = "none";
 
