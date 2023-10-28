@@ -300,7 +300,7 @@ const darkModeBtn = document.querySelector("#dark-mode") as HTMLButtonElement;
 const pageBody = document.querySelector("body") as HTMLBodyElement;
 
 lightModeBtn.addEventListener('click', () => {
-    pageBody.style.backgroundColor = "#6CB4EE";
+    pageBody.style.backgroundColor = "#696969";
     darkModeBtn.style.display = "block";
     lightModeBtn.style.display = "none";
 
