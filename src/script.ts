@@ -178,10 +178,10 @@ function addRecord(obj: RecordInfo, chapter: Element): void {
     const link2 = document.createElement("a")
 
     if (obj.src2 !== undefined) {
-        link.textContent = 'Part 1 '
+        link.textContent = 'P1'
         link.href = obj.src;
         link.target = "_blank"
-        link2.textContent = ' Part 2'
+        link2.textContent = ' P2'
         link2.href = obj.src2;
         link2.target = "_blank"
         src.appendChild(link)

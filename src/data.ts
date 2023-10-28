@@ -32,7 +32,7 @@ const userData_RomeH: Array<playerInfo> = [
         player: 'Horde Legends Team',
         wave: '91',
         src: 'https://www.twitch.tv/videos/1956988311',
-        member: ['gogu7382', 'LegioX_Wintersky', 'HiRUnknown', 'YupItsMeh']
+        member: ['gogu7382', 'LegioX_Wintersky', 'HiRUnknown', 'Crispokringle']
     },
     {
         player: '貓白',
@@ -89,7 +89,7 @@ const userData_SKH: Array<playerInfo> = [
         player: 'Horde Legends Team',
         wave: '75',
         src: 'https://www.twitch.tv/videos/1804004015',
-        member: ['gogu7382', 'LegioX_Wintersky', 'HiRUnknown', 'YupItsMeh', 'XxFriction']
+        member: ['gogu7382', 'HiRUnknown', 'terihlon', 'Wolf Toches MDLG']
     },
     {
         player: 'Humildad',
