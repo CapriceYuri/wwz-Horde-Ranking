@@ -81,15 +81,10 @@ const userData_RomeH: Array<playerInfo> = [
 ]
 const userData_SKH: Array<playerInfo> = [
     {
-        player: '睡姿决定发型',
-        wave: '86',
-        src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
-    },
-    {
         player: 'Horde Legends Team',
-        wave: '75',
-        src: 'https://www.twitch.tv/videos/1804004015',
-        member: ['gogu7382', 'HiRUnknown', 'terihlon', 'Wolf Toches MDLG']
+        wave: '86',
+        src: 'https://www.twitch.tv/videos/1963207322',
+        member: ['gogu7382', 'HiRUnknown', 'LegioX_Wintersky', 'Crispokringle']
     },
     {
         player: 'Humildad',
@@ -128,6 +123,11 @@ const userData_SKH: Array<playerInfo> = [
         player: 'titojimmyyy',
         wave: '20',
         src: 'https://www.youtube.com/watch?v=hJyPgUgcGaw',
+    },
+    {
+        player: '睡姿决定发型',
+        wave: '86',
+        src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
     },
 ]
 const userData_NYH: Array<playerInfo> = [
