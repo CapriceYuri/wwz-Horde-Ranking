@@ -239,11 +239,6 @@ const userData_RomeN = [
         wave: '19',
         src: 'https://www.youtube.com/watch?v=WY3A_7or2jI&ab_channel=FireTeamShooters',
     },
-    {
-        player: 'Imperion',
-        wave: '102',
-        src: '#',
-    },
 ];
 const userData_SKN = [
     {
