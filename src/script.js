@@ -269,3 +269,4 @@ darkModeBtn.addEventListener('click', () => {
     leaderboardRecord.forEach(ele => ele.classList.remove("text-dark"));
     leaderboardRecord.forEach(ele => ele.classList.add("text-light"));
 });
+skullType[6].attributes[0].textContent = "images/pepe.png";
