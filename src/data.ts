@@ -217,8 +217,8 @@ const userData_JapanN: Array<playerInfo> = [
 const userData_RomeN: Array<playerInfo> = [
     {
         player: 'E7S4',
-        wave: '42',
-        src: 'https://www.twitch.tv/videos/1945739977',
+        wave: '49',
+        src: 'https://www.twitch.tv/videos/1963898798',
     },
     {
         player: 'PheaktraCapo',
