@@ -327,6 +327,7 @@ const timeAgo = document.querySelectorAll(".timeago");
 
 
 const todayDate = new Date();
+
 const getMonth = (todayDate.getMonth()) + 1;
 const getDay = todayDate.getDate();
 const getYear = todayDate.getFullYear();
@@ -336,10 +337,10 @@ const formattedToday = new Date(`${getMonth}/${getDay}/${getYear}`)
 for (let x = 0; x < timeAgo.length; x++) {
     let temp = new Date(`${data[x][0].date}`)
     let tempNum = (Math.floor((formattedToday.getTime() - temp.getTime()) / (86400000))).toString()
-    if (+tempNum > 60) {
-        timeAgo[x].classList.add("text-danger", "h3");
-    } else if (+tempNum > 30) {
-        timeAgo[x].classList.add("text-warning", "h5");
-    }
+    // if (+tempNum > 60) {
+    //     timeAgo[x].classList.add("text-danger", "h3");
+    // } else if (+tempNum > 30) {
+    //     timeAgo[x].classList.add("text-warning", "h5");
+    // }
     timeAgo[x].textContent = tempNum
 }
