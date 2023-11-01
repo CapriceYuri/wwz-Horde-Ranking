@@ -288,3 +288,6 @@ for (let x = 0; x < timeAgo.length; x++) {
     }
     timeAgo[x].textContent = tempNum;
 }
+console.log(todayDate);
+console.log(formattedToday);
+console.log(data);
