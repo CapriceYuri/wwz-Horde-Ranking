@@ -119,6 +119,11 @@ const userData_SKH = [
         wave: '86',
         src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
     },
+    {
+        player: '貓白',
+        wave: '94',
+        src: 'https://www.youtube.com/watch?v=miwXKuSSlco&t=407s',
+    },
 ];
 const userData_NYH = [
     {
