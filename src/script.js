@@ -1,5 +1,6 @@
 import { userData_JapanH, userData_RomeH, userData_SKH, userData_NYH, userData_JH } from "./data.js";
 import { userData_JapanN, userData_RomeN, userData_SKN, userData_NYN, userData_JN } from "./data.js";
+import { data } from "./data.js";
 const summary = document.querySelector("#btnradio0");
 const summaryBox = document.querySelector(".BOX0");
 const hardSelect = document.querySelector("#btnradio1");
@@ -269,3 +270,21 @@ darkModeBtn.addEventListener('click', () => {
     leaderboardRecord.forEach(ele => ele.classList.remove("text-dark"));
     leaderboardRecord.forEach(ele => ele.classList.add("text-light"));
 });
+// Calculate Record Time
+const timeAgo = document.querySelectorAll(".timeago");
+const todayDate = new Date();
+const getMonth = (todayDate.getMonth()) + 1;
+const getDay = todayDate.getDate();
+const getYear = todayDate.getFullYear();
+const formattedToday = new Date(`${getMonth}/${getDay}/${getYear}`);
+for (let x = 0; x < timeAgo.length; x++) {
+    let temp = new Date(`${data[x][0].date}`);
+    let tempNum = (Math.floor((formattedToday.getTime() - temp.getTime()) / (86400000))).toString();
+    if (+tempNum > 60) {
+        timeAgo[x].classList.add("text-danger", "h3");
+    }
+    else if (+tempNum > 30) {
+        timeAgo[x].classList.add("text-warning", "h5");
+    }
+    timeAgo[x].textContent = tempNum;
+}

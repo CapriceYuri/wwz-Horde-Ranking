@@ -4,6 +4,7 @@ const userData_JapanH = [
         player: 'SiberianPsych0',
         wave: '57',
         src: 'https://www.youtube.com/watch?v=vPT_K6OQxbE&t=63s&ab_channel=SiberianPsych0',
+        date: "2/24/2023"
     },
     {
         player: 'ABA-180MM',
@@ -22,7 +23,8 @@ const userData_RomeH = [
         player: 'Horde Legends Team',
         wave: '91',
         src: 'https://www.twitch.tv/videos/1956988311',
-        member: ['gogu7382', 'LegioX_Wintersky', 'HiRUnknown', 'Crispokringle']
+        member: ['gogu7382', 'LegioX_Wintersky', 'HiRUnknown', 'Crispokringle'],
+        date: "10/21/2023"
     },
     {
         player: '貓白',
@@ -123,6 +125,7 @@ const userData_SKH = [
         player: '貓白',
         wave: '94',
         src: 'https://www.youtube.com/watch?v=miwXKuSSlco&t=407s',
+        date: "9/28/2023"
     },
 ];
 const userData_NYH = [
@@ -130,6 +133,7 @@ const userData_NYH = [
         player: '貓白',
         wave: '82',
         src: 'https://www.youtube.com/watch?v=KCjRrQSbEWQ',
+        date: "9/23/2023"
     },
     {
         player: 'SiberianPsych0',
@@ -152,6 +156,7 @@ const userData_JH = [
         player: '睡姿决定发型',
         wave: '81',
         src: 'https://www.youtube.com/watch?v=AkU3kfc2TLU&ab_channel=yyz',
+        date: "10/22/2023"
     },
     {
         player: 'SiberianPsych0',
@@ -170,6 +175,7 @@ const userData_JapanN = [
         player: 'Senku_Jo',
         wave: '66',
         src: 'https://www.youtube.com/watch?v=guZsazMirJI&ab_channel=Senku_Jo',
+        date: "6/9/2023"
     },
     {
         player: 'LG Feared',
@@ -212,6 +218,7 @@ const userData_RomeN = [
         player: 'E7S4',
         wave: '49',
         src: 'https://www.twitch.tv/videos/1963898798',
+        date: "10/29/2023"
     },
     {
         player: 'PheaktraCapo',
@@ -276,7 +283,8 @@ const userData_SKN = [
         player: 'Avoki',
         wave: '101',
         src: 'https://www.youtube.com/watch?v=KgaB9Hxr0_A&ab_channel=luisfelipemognon',
-        member: ['bolaxadomar', 'CristianKD_', 'Mano_Pipoca']
+        member: ['bolaxadomar', 'CristianKD_', 'Mano_Pipoca'],
+        date: "10/23/2023"
     },
 ];
 const userData_NYN = [
@@ -284,6 +292,7 @@ const userData_NYN = [
         player: 'ChristDior',
         wave: '60',
         src: 'https://www.youtube.com/watch?v=FeasDPsB5Fg&ab_channel=WenHalloWen',
+        date: "4/1/2023"
     },
     {
         player: 'Renegade LK',
@@ -312,6 +321,7 @@ const userData_JN = [
         player: 'Senku_Jo',
         wave: '55',
         src: 'https://www.youtube.com/watch?v=VRUy7Q9YTqg&ab_channel=Senku_Jo2',
+        date: "6/2/2023"
     },
     {
         player: 'Renegade LK',
@@ -334,7 +344,10 @@ const userData_JN = [
         src: 'https://www.youtube.com/watch?v=Deg5QdBUBv8&ab_channel=GamingTamari',
     },
 ];
+const data = [userData_JapanH, userData_RomeH, userData_SKH, userData_NYH, userData_JH, userData_JapanN, userData_RomeN, userData_SKN, userData_NYN, userData_JN];
 // EXPORT DATA , RECORD (H)
 export { userData_JapanH, userData_RomeH, userData_SKH, userData_NYH, userData_JH };
 // EXPORT DATA, RECORD (N)
 export { userData_JapanN, userData_RomeN, userData_SKN, userData_NYN, userData_JN };
+// FULL DATA
+export { data };
