@@ -39,7 +39,7 @@ const userData_RomeH: Array<playerInfo> = [
 
     },
     {
-        player: '貓白',
+        player: 'Maobai Pro Team',
         wave: '81',
         src: 'https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD',
         src2: 'https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD'
@@ -128,13 +128,13 @@ const userData_SKH: Array<playerInfo> = [
         wave: '44',
         src: 'https://www.youtube.com/watch?v=tFKrW7J7DDk',
     },
+    // {
+    //     player: '睡姿决定发型',
+    //     wave: '86',
+    //     src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
+    // },
     {
-        player: '睡姿决定发型',
-        wave: '86',
-        src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
-    },
-    {
-        player: '貓白',
+        player: 'Maobai Pro Team',
         wave: '94',
         src: 'https://www.youtube.com/watch?v=miwXKuSSlco&t=407s',
         date: "9/28/2023"
@@ -142,7 +142,7 @@ const userData_SKH: Array<playerInfo> = [
 ]
 const userData_NYH: Array<playerInfo> = [
     {
-        player: '貓白',
+        player: 'Maobai Pro Team',
         wave: '82',
         src: 'https://www.youtube.com/watch?v=KCjRrQSbEWQ',
         date: "9/23/2023"
@@ -170,7 +170,7 @@ const userData_NYH: Array<playerInfo> = [
 ]
 const userData_JH: Array<playerInfo> = [
     {
-        player: '睡姿决定发型',
+        player: 'Maobai Pro Team',
         wave: '81',
         src: 'https://www.youtube.com/watch?v=AkU3kfc2TLU&ab_channel=yyz',
         date: "10/22/2023"
