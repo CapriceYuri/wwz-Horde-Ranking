@@ -292,7 +292,7 @@ console.log(todayDate);
 console.log(formattedToday);
 console.log(data);
 const saberprank = document.createElement("img");
-saberprank.setAttribute("src", "/images/saber.png");
+saberprank.setAttribute("src", "images/reaper.png");
 const saberprankName = document.createElement("span");
 saberprankName.textContent = "  Saber Interactive";
 saberprankName.classList.add("text-warning");
