@@ -349,10 +349,11 @@ console.log(formattedToday);
 console.log(data)
 
 const saberprank = document.createElement("img");
-saberprank.setAttribute("src", "images/reaper.png")
+saberprank.setAttribute("src", "images/saber.png")
 const saberprankName = document.createElement("span")
-saberprankName.textContent = "  Saber Interactive"
+saberprankName.textContent = " Saber Interactive"
 saberprankName.classList.add("text-warning")
+
 nyH.childNodes[5].childNodes[1].appendChild(saberprank);
 nyH.childNodes[5].childNodes[1].appendChild(saberprankName);
 
