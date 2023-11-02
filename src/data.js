@@ -146,6 +146,11 @@ const userData_NYH = [
         src: 'https://www.youtube.com/watch?v=phaws8OfxVY&t=38s&ab_channel=Senku_Jo',
     },
     {
+        player: `Saber Interactive`,
+        wave: '2',
+        src: 'https://www.twitch.tv/videos/1966672798',
+    },
+    {
         player: 'ChristDior',
         wave: '36',
         src: 'https://www.youtube.com/watch?v=tl7vDhrzoq4&ab_channel=WenHalloWen',

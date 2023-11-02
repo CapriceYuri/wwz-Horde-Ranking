@@ -347,3 +347,4 @@ for (let x = 0; x < timeAgo.length; x++) {
 console.log(todayDate);
 console.log(formattedToday);
 console.log(data)
+
