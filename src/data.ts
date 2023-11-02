@@ -158,7 +158,7 @@ const userData_NYH: Array<playerInfo> = [
         src: 'https://www.youtube.com/watch?v=phaws8OfxVY&t=38s&ab_channel=Senku_Jo',
     },
     {
-        player: `Saber Interactive`,
+        player: ` `,
         wave: '2',
         src: 'https://www.twitch.tv/videos/1966672798',
     },
