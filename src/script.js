@@ -253,6 +253,26 @@ for (let i = 0; i < leaderboardHardWave.length; i++) {
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i];
     }
 }
+// Countup for Record Run
+function countUpRecord() {
+    leaderboardHardWave.forEach((array) => {
+        const target = +array.textContent;
+        array.textContent = '0';
+        const updateCountRecord = () => {
+            const c = +array.textContent;
+            const increment = target / 100;
+            if (c < target) {
+                array.textContent = `${Math.ceil(c + increment)}`;
+                setTimeout(updateCountRecord, 75);
+            }
+            else {
+                array.textContent = target.toString();
+            }
+        };
+        updateCountRecord();
+    });
+}
+countUpRecord();
 // LIGHT & DARK MODE
 const lightModeBtn = document.querySelector("#light-mode");
 const darkModeBtn = document.querySelector("#dark-mode");
@@ -278,8 +298,8 @@ const getDay = todayDate.getDate();
 const getYear = todayDate.getFullYear();
 const formattedToday = new Date(`${getMonth}/${getDay}/${getYear}`);
 for (let x = 0; x < timeAgo.length; x++) {
-    let temp = new Date(`${data[x][0].date}`);
-    let tempNum = (Math.floor((formattedToday.getTime() - temp.getTime()) / (86400000))).toString();
+    const temp = new Date(`${data[x][0].date}`);
+    const tempNum = (Math.floor((formattedToday.getTime() - temp.getTime()) / (86400000))).toString();
     if (+tempNum > 60) {
         timeAgo[x].classList.add("text-danger", "h3");
     }
@@ -288,8 +308,26 @@ for (let x = 0; x < timeAgo.length; x++) {
     }
     timeAgo[x].textContent = tempNum;
 }
-console.log(todayDate);
-console.log(formattedToday);
+// CountUp for Record Days
+function countUp() {
+    timeAgo.forEach((array) => {
+        const target = +array.textContent;
+        array.textContent = '0';
+        const updateCount = () => {
+            const c = +array.textContent;
+            const increment = target / 100;
+            if (c < target) {
+                array.textContent = `${Math.ceil(c + increment)}`;
+                setTimeout(updateCount, 75);
+            }
+            else {
+                array.textContent = target.toString();
+            }
+        };
+        updateCount();
+    });
+}
+countUp();
 console.log(data);
 const saberprank = document.createElement("img");
 saberprank.setAttribute("src", "images/saber.png");
@@ -298,4 +336,3 @@ saberprankName.textContent = " Saber Interactive";
 saberprankName.classList.add("text-warning");
 nyH.childNodes[5].childNodes[1].appendChild(saberprank);
 nyH.childNodes[5].childNodes[1].appendChild(saberprankName);
-console.log();
