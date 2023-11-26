@@ -260,10 +260,9 @@ function countUpRecord() {
         array.textContent = '0';
         const updateCountRecord = () => {
             const c = +array.textContent;
-            const increment = target / 100;
             if (c < target) {
-                array.textContent = `${Math.ceil(c + increment)}`;
-                setTimeout(updateCountRecord, 75);
+                array.textContent = `${Math.ceil(c + 1)}`;
+                setTimeout(updateCountRecord, 50);
             }
             else {
                 array.textContent = target.toString();
@@ -315,10 +314,9 @@ function countUp() {
         array.textContent = '0';
         const updateCount = () => {
             const c = +array.textContent;
-            const increment = target / 100;
             if (c < target) {
-                array.textContent = `${Math.ceil(c + increment)}`;
-                setTimeout(updateCount, 75);
+                array.textContent = `${Math.ceil(c + 1)}`;
+                setTimeout(updateCount, 50);
             }
             else {
                 array.textContent = target.toString();
