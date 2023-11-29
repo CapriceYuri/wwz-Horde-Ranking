@@ -441,6 +441,22 @@ const imgPdata: Array<imgInfo> = [
         imgAuthor: 'Mewtality',
         imgUrl: "p1"
     },
+    {
+        imgAuthor: 'Mewtality',
+        imgUrl: "p2"
+    },
+    {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p3"
+    },
+    {
+        imgAuthor: 'Zim',
+        imgUrl: "p4"
+    },
+    {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p5"
+    },
 ]
 
 export { imgData, imgPdata }
