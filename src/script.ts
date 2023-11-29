@@ -422,11 +422,14 @@ interface ImgRecord {
 function addGalleyImage(obj: ImgRecord): void {
     const tempCol = document.createElement("div");
     tempCol.classList.add("col-xl-6", "col-12", "p-2");
+
     const tempColCard = document.createElement("div");
     tempColCard.classList.add('card', 'text-bg-dark');
+
     const imgContent = document.createElement('img');
     imgContent.classList.add('card-img', 'card-fluid');
-    imgContent.setAttribute('src', '/images/img1.png');
+    imgContent.setAttribute('src', '../img1.png');
+
     const imgContentAuthor = document.createElement('div');
     imgContentAuthor.classList.add('card-img-overlay');
     imgContentAuthor.innerText = `@ ${obj.imgAuthor}`
