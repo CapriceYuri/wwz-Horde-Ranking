@@ -426,7 +426,7 @@ function addGalleyImage(obj: ImgRecord): void {
     tempColCard.classList.add('card', 'text-bg-dark');
     const imgContent = document.createElement('img');
     imgContent.classList.add('card-img', 'card-fluid');
-    imgContent.setAttribute('src', `../images/${obj.imgUrl}.png`);
+    imgContent.setAttribute('src', `/images/${obj.imgUrl}.png`);
     const imgContentAuthor = document.createElement('div');
     imgContentAuthor.classList.add('card-img-overlay');
     imgContentAuthor.innerText = `@ ${obj.imgAuthor}`
@@ -435,6 +435,10 @@ function addGalleyImage(obj: ImgRecord): void {
     tempColCard.appendChild(imgContentAuthor)
     tempCol.appendChild(tempColCard);
     galleryImgBox.appendChild(tempCol);
+
 }
 
-imgData.forEach(obj => addGalleyImage(obj));
+imgData.forEach(obj => {
+    addGalleyImage(obj)
+}
+);
