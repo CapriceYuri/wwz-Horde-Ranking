@@ -30,7 +30,7 @@ a {
 }
 
 .BOX0 {
-  display: block;
+  display: none;
 }
 
 .BOX1 {
@@ -46,7 +46,7 @@ a {
 }
 
 .BOXP {
-  display: none;
+  display: block;
 }
 
 .vibrate {
