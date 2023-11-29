@@ -30,7 +30,7 @@ a {
 }
 
 .BOX0 {
-  display: block;
+  display: none;
 }
 
 .BOX1 {
@@ -39,6 +39,10 @@ a {
 
 .BOX2 {
   display: none;
+}
+
+.BOXG {
+  display: block;
 }
 
 .vibrate {
@@ -259,4 +263,11 @@ a {
   100% {
     opacity: 1;
   }
+}
+.BOXG .card {
+  height: 100%;
+}
+
+.BOXG img {
+  height: 100%;
 }

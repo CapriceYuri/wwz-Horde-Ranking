@@ -356,3 +356,59 @@ export { userData_JapanH, userData_RomeH, userData_SKH, userData_NYH, userData_J
 export { userData_JapanN, userData_RomeN, userData_SKN, userData_NYN, userData_JN };
 // FULL DATA
 export { data };
+// BOX GALLERY
+const imgData = [
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img1",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img2",
+    },
+    {
+        imgAuthor: "Wintersky_Legendary",
+        imgUrl: "img3",
+    },
+    {
+        imgAuthor: "lol",
+        imgUrl: "img4",
+    },
+    {
+        imgAuthor: "XxFriction",
+        imgUrl: "img5",
+    },
+    {
+        imgAuthor: "XxFriction",
+        imgUrl: "img12",
+    },
+    {
+        imgAuthor: "gogu",
+        imgUrl: "img6",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img7",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img8",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img9",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img10",
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img11",
+    },
+    {
+        imgAuthor: "BudiPratomo",
+        imgUrl: "img13",
+    },
+];
+export { imgData };
