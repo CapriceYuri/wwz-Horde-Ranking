@@ -411,4 +411,10 @@ const imgData = [
         imgUrl: "img13",
     },
 ];
-export { imgData };
+const imgPdata = [
+    {
+        imgAuthor: 'Mewtality',
+        imgUrl: "p1"
+    },
+];
+export { imgData, imgPdata };

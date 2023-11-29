@@ -1,7 +1,7 @@
 import { userData_JapanH, userData_RomeH, userData_SKH, userData_NYH, userData_JH } from "./data.js";
 import { userData_JapanN, userData_RomeN, userData_SKN, userData_NYN, userData_JN } from "./data.js";
 import { data } from "./data.js"
-import { imgData } from "./data.js";
+import { imgData, imgPdata } from "./data.js";
 
 const summary = document.querySelector("#btnradio0") as HTMLInputElement;
 const summaryBox = document.querySelector(".BOX0") as HTMLInputElement;
@@ -15,6 +15,10 @@ const normalBox = document.querySelector(".BOX2") as HTMLInputElement;
 const gallerySelect = document.querySelector("#btnradioG") as HTMLInputElement;
 const galleryBox = document.querySelector(".BOXG") as HTMLInputElement;
 const galleryImgBox = document.querySelector(".gallery-box") as HTMLElement;
+
+const galleryPSelect = document.querySelector("#btnradioP") as HTMLInputElement;
+const galleryPBox = document.querySelector(".BOXP") as HTMLInputElement;
+const galleryPImgBox = document.querySelector(".galleryP-box") as HTMLElement;
 
 // Content Tabs Logic
 summary.addEventListener('click', () => {
@@ -33,6 +37,8 @@ normalSelect.addEventListener('click', () => {
     summaryBox.style.display = 'none'
     gallerySelect.checked = false;
     galleryBox.style.display = 'none'
+    galleryPSelect.checked = false;
+    galleryPBox.style.display = 'none';
     normalBox.style.display = 'block'
 })
 hardSelect.addEventListener('click', () => {
@@ -42,6 +48,8 @@ hardSelect.addEventListener('click', () => {
     summaryBox.style.display = 'none';
     gallerySelect.checked = false;
     galleryBox.style.display = 'none'
+    galleryPSelect.checked = false;
+    galleryPBox.style.display = 'none';
     hardBox.style.display = 'block'
 })
 gallerySelect.addEventListener('click', () => {
@@ -51,7 +59,20 @@ gallerySelect.addEventListener('click', () => {
     summaryBox.style.display = 'none';
     hardSelect.checked = false;
     hardBox.style.display = 'none';
+    galleryPSelect.checked = false;
+    galleryPBox.style.display = 'none';
     galleryBox.style.display = 'block'
+})
+galleryPSelect.addEventListener('click', () => {
+    normalSelect.checked = false;
+    normalBox.style.display = 'none';
+    summary.checked = false;
+    summaryBox.style.display = 'none';
+    hardSelect.checked = false;
+    hardBox.style.display = 'none';
+    gallerySelect.checked = false;
+    galleryBox.style.display = 'none';
+    galleryPBox.style.display = 'block';
 })
 
 // Hard/Normal Maps
@@ -441,7 +462,27 @@ function addGalleyImage(obj: ImgRecord): void {
 
 }
 
-imgData.forEach(obj => {
-    addGalleyImage(obj)
+function addGalleyPImage(obj: ImgRecord): void {
+    const tempCol = document.createElement("div");
+    tempCol.classList.add("col-xl-6", "col-12", "p-2");
+
+    const tempColCard = document.createElement("div");
+    tempColCard.classList.add('card', 'text-bg-dark');
+
+    const imgContent = document.createElement('img');
+    imgContent.classList.add('card-img', 'card-fluid');
+    imgContent.setAttribute('src', `images/${obj.imgUrl}.png`);
+
+    const imgContentAuthor = document.createElement('div');
+    imgContentAuthor.classList.add('card-img-overlay');
+    imgContentAuthor.innerText = `@ ${obj.imgAuthor}`
+
+    tempColCard.appendChild(imgContent)
+    tempColCard.appendChild(imgContentAuthor)
+    tempCol.appendChild(tempColCard);
+    galleryPImgBox.appendChild(tempCol);
+
 }
-);
+
+imgData.forEach(obj => addGalleyImage(obj));
+imgPdata.forEach(obj => addGalleyPImage(obj));

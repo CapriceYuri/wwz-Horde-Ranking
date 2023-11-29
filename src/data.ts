@@ -436,5 +436,11 @@ const imgData: Array<imgInfo> = [
     },
 ]
 
+const imgPdata: Array<imgInfo> = [
+    {
+        imgAuthor: 'Mewtality',
+        imgUrl: "p1"
+    },
+]
 
-export { imgData }
+export { imgData, imgPdata }
