@@ -28,6 +28,8 @@ summary.addEventListener('click', () => {
     normalBox.style.display = 'none';
     gallerySelect.checked = false;
     galleryBox.style.display = 'none'
+    galleryPSelect.checked = false;
+    galleryPBox.style.display = 'none';
     summaryBox.style.display = 'block';
 })
 normalSelect.addEventListener('click', () => {
@@ -114,7 +116,7 @@ const skNV = document.querySelector("#skNV") as HTMLElement;
 const nyNV = document.querySelector("#nyNV") as HTMLElement;
 const jNV = document.querySelector("#jNV") as HTMLElement;
 
-
+const galleryValue = document.querySelectorAll(".psection");
 
 // Content Entry Logic
 interface RecordInfo {
@@ -422,8 +424,6 @@ function countUp() {
     });
 } countUp();
 
-console.log(data)
-
 const saberprank = document.createElement("img");
 saberprank.setAttribute("src", "images/saber.png")
 const saberprankName = document.createElement("span")
@@ -486,3 +486,23 @@ function addGalleyPImage(obj: ImgRecord): void {
 
 imgData.forEach(obj => addGalleyImage(obj));
 imgPdata.forEach(obj => addGalleyPImage(obj));
+
+// SCRIPT FOR COUNTUP BOTH GALLERY
+galleryValue.forEach(ele => {
+    const tempV = +ele.textContent!;
+    const step = tempV / 100;
+    ele.textContent = "0";
+
+    const updateC = () => {
+        const c = +ele.textContent!;
+        if (c < tempV) {
+            ele.textContent = `${Math.ceil(c + step)}`
+            setTimeout(updateC, 50)
+        } else {
+            ele.textContent = tempV.toString();
+        }
+    }
+    updateC();
+});
+
+

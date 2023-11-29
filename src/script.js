@@ -23,6 +23,8 @@ summary.addEventListener('click', () => {
     normalBox.style.display = 'none';
     gallerySelect.checked = false;
     galleryBox.style.display = 'none';
+    galleryPSelect.checked = false;
+    galleryPBox.style.display = 'none';
     summaryBox.style.display = 'block';
 });
 normalSelect.addEventListener('click', () => {
@@ -101,6 +103,7 @@ const xlrNV = document.querySelector("#xlrNV");
 const skNV = document.querySelector("#skNV");
 const nyNV = document.querySelector("#nyNV");
 const jNV = document.querySelector("#jNV");
+const galleryValue = document.querySelectorAll(".psection");
 function addRecord(obj, chapter) {
     const tempRow = document.createElement("tr");
     tempRow.classList.add("text-center", "align-middle");
@@ -365,7 +368,6 @@ function countUp() {
     });
 }
 countUp();
-console.log(data);
 const saberprank = document.createElement("img");
 saberprank.setAttribute("src", "images/saber.png");
 const saberprankName = document.createElement("span");
@@ -407,3 +409,20 @@ function addGalleyPImage(obj) {
 }
 imgData.forEach(obj => addGalleyImage(obj));
 imgPdata.forEach(obj => addGalleyPImage(obj));
+// SCRIPT FOR COUNTUP BOTH GALLERY
+galleryValue.forEach(ele => {
+    const tempV = +ele.textContent;
+    const step = tempV / 100;
+    ele.textContent = "0";
+    const updateC = () => {
+        const c = +ele.textContent;
+        if (c < tempV) {
+            ele.textContent = `${Math.ceil(c + step)}`;
+            setTimeout(updateC, 50);
+        }
+        else {
+            ele.textContent = tempV.toString();
+        }
+    };
+    updateC();
+});
