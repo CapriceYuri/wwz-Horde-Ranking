@@ -473,6 +473,14 @@ const imgPdata: Array<imgInfo> = [
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
         imgUrl: "p9"
     },
+    {
+        imgAuthor: 'xD3viLzx',
+        imgUrl: "p10"
+    },
+    {
+        imgAuthor: 'xD3viLzx',
+        imgUrl: "p11"
+    },
 ]
 
 export { imgData, imgPdata }
