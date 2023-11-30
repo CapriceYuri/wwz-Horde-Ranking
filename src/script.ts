@@ -64,6 +64,7 @@ gallerySelect.addEventListener('click', () => {
     galleryPSelect.checked = false;
     galleryPBox.style.display = 'none';
     galleryBox.style.display = 'block'
+    galleryCount();
 })
 galleryPSelect.addEventListener('click', () => {
     normalSelect.checked = false;
@@ -75,6 +76,7 @@ galleryPSelect.addEventListener('click', () => {
     gallerySelect.checked = false;
     galleryBox.style.display = 'none';
     galleryPBox.style.display = 'block';
+    galleryPCount();
 })
 
 // Hard/Normal Maps
@@ -116,7 +118,8 @@ const skNV = document.querySelector("#skNV") as HTMLElement;
 const nyNV = document.querySelector("#nyNV") as HTMLElement;
 const jNV = document.querySelector("#jNV") as HTMLElement;
 
-const galleryValue = document.querySelectorAll(".psection");
+const galleryValue = document.querySelectorAll(".gsection");
+const galleryPValue = document.querySelectorAll(".psection");
 
 // Content Entry Logic
 interface RecordInfo {
@@ -464,7 +467,7 @@ function addGalleyImage(obj: ImgRecord): void {
 
 function addGalleyPImage(obj: ImgRecord): void {
     const tempCol = document.createElement("div");
-    tempCol.classList.add("col-xl-6", "col-12", "p-2");
+    tempCol.classList.add("col-xl-6", "col-12", "p-2", "align-items-center", "d-flex");
 
     const tempColCard = document.createElement("div");
     tempColCard.classList.add('card', 'text-bg-dark');
@@ -488,21 +491,40 @@ imgData.forEach(obj => addGalleyImage(obj));
 imgPdata.forEach(obj => addGalleyPImage(obj));
 
 // SCRIPT FOR COUNTUP BOTH GALLERY
-galleryValue.forEach(ele => {
-    const tempV = +ele.textContent!;
-    const step = tempV / 100;
-    ele.textContent = "0";
+function galleryCount(): void {
+    galleryValue.forEach(ele => {
+        const tempV = +ele.textContent!;
+        const step = tempV / 100;
+        ele.textContent = "0";
 
-    const updateC = () => {
-        const c = +ele.textContent!;
-        if (c < tempV) {
-            ele.textContent = `${Math.ceil(c + step)}`
-            setTimeout(updateC, 50)
-        } else {
-            ele.textContent = tempV.toString();
+        const updateC = () => {
+            const c = +ele.textContent!;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateC, 50)
+            } else {
+                ele.textContent = tempV.toString();
+            }
         }
-    }
-    updateC();
-});
+        updateC();
+    });
+}
 
+function galleryPCount(): void {
+    galleryPValue.forEach(ele => {
+        const tempV = +ele.textContent!;
+        const step = tempV / 100;
+        ele.textContent = "0";
 
+        const updateC = () => {
+            const c = +ele.textContent!;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateC, 50)
+            } else {
+                ele.textContent = tempV.toString();
+            }
+        }
+        updateC();
+    });
+}
