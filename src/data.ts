@@ -388,6 +388,13 @@ export { data }
 const imgData: Array<imgInfo> = [
     {
         imgAuthor: "Maobai",
+        imgUrl: "img14",
+        totalK: 151814,
+        totalS: 2291,
+        totalA: 5785,
+    },
+    {
+        imgAuthor: "Maobai",
         imgUrl: "img1",
         totalK: 118244,
         totalS: 1698,

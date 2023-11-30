@@ -511,7 +511,7 @@ imgPdata.forEach(obj => addGalleyPImage(obj));
 function galleryCount(): void {
     galleryValue.forEach(ele => {
         const tempV = +ele.textContent!;
-        const step = tempV / 100;
+        const step = tempV / 50;
         ele.textContent = "0";
 
         const updateC = () => {
@@ -530,7 +530,7 @@ function galleryCount(): void {
 function galleryPCount(): void {
     galleryPValue.forEach(ele => {
         const tempV = +ele.textContent!;
-        const step = tempV / 100;
+        const step = tempV / 50;
         ele.textContent = "0";
 
         const updateC = () => {
@@ -549,14 +549,14 @@ function galleryPCount(): void {
 function galleryHTCount(): void {
     hordeT.forEach(ele => {
         const tempV = +ele.textContent!;
-        const step = tempV / 250;
+        const step = tempV / 75;
         ele.textContent = "0";
 
         const updateC = () => {
             const c = +ele.textContent!;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`
-                setTimeout(updateC, 50)
+                setTimeout(updateC, 40)
             } else {
                 ele.textContent = tempV.toString();
             }
@@ -568,14 +568,14 @@ function galleryHTCount(): void {
 function galleryCTCount(): void {
     casualT.forEach(ele => {
         const tempV = +ele.textContent!;
-        const step = tempV / 150;
+        const step = tempV / 100;
         ele.textContent = "0";
 
         const updateC = () => {
             const c = +ele.textContent!;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`
-                setTimeout(updateC, 50)
+                setTimeout(updateC, 40)
             } else {
                 ele.textContent = tempV.toString();
             }
