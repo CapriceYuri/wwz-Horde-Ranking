@@ -426,13 +426,13 @@ imgPdata.forEach(obj => addGalleyPImage(obj));
 function galleryCount() {
     galleryValue.forEach(ele => {
         const tempV = +ele.textContent;
-        const step = tempV / 50;
+        const step = tempV / 100;
         ele.textContent = "0";
         const updateC = () => {
             const c = +ele.textContent;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`;
-                setTimeout(updateC, 50);
+                setTimeout(updateC, 20);
             }
             else {
                 ele.textContent = tempV.toString();
@@ -444,13 +444,13 @@ function galleryCount() {
 function galleryPCount() {
     galleryPValue.forEach(ele => {
         const tempV = +ele.textContent;
-        const step = tempV / 50;
+        const step = tempV / 100;
         ele.textContent = "0";
         const updateC = () => {
             const c = +ele.textContent;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`;
-                setTimeout(updateC, 50);
+                setTimeout(updateC, 20);
             }
             else {
                 ele.textContent = tempV.toString();
@@ -462,13 +462,13 @@ function galleryPCount() {
 function galleryHTCount() {
     hordeT.forEach(ele => {
         const tempV = +ele.textContent;
-        const step = tempV / 75;
+        const step = tempV / 100;
         ele.textContent = "0";
         const updateC = () => {
             const c = +ele.textContent;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`;
-                setTimeout(updateC, 40);
+                setTimeout(updateC, 20);
             }
             else {
                 ele.textContent = tempV.toString();
@@ -486,7 +486,7 @@ function galleryCTCount() {
             const c = +ele.textContent;
             if (c < tempV) {
                 ele.textContent = `${Math.ceil(c + step)}`;
-                setTimeout(updateC, 40);
+                setTimeout(updateC, 20);
             }
             else {
                 ele.textContent = tempV.toString();
