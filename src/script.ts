@@ -65,6 +65,7 @@ gallerySelect.addEventListener('click', () => {
     galleryPBox.style.display = 'none';
     galleryBox.style.display = 'block'
     galleryCount();
+    galleryHTCount();
 })
 galleryPSelect.addEventListener('click', () => {
     normalSelect.checked = false;
@@ -77,6 +78,7 @@ galleryPSelect.addEventListener('click', () => {
     galleryBox.style.display = 'none';
     galleryPBox.style.display = 'block';
     galleryPCount();
+    galleryCTCount();
 })
 
 // Hard/Normal Maps
@@ -120,6 +122,17 @@ const jNV = document.querySelector("#jNV") as HTMLElement;
 
 const galleryValue = document.querySelectorAll(".gsection");
 const galleryPValue = document.querySelectorAll(".psection");
+
+const hordeTK = document.querySelector('.horde-totalK');
+const hordeTA = document.querySelector('.horde-totalA');
+const hordeTS = document.querySelector('.horde-totalS');
+
+const casualTK = document.querySelector('.casual-TK');
+const casualTPvp = document.querySelector('.casual-TPvp');
+const casualTS = document.querySelector('.casual-TS');
+
+const hordeT = document.querySelectorAll('.hordeT');
+const casualT = document.querySelectorAll('.casualT');
 
 // Content Entry Logic
 interface RecordInfo {
@@ -441,6 +454,10 @@ nyH.childNodes[5].childNodes[1].appendChild(saberprankName);
 interface ImgRecord {
     imgAuthor: string,
     imgUrl: string,
+    totalK?: number,
+    totalS?: number,
+    totalA?: number,
+    totalPvP?: number,
 }
 
 function addGalleyImage(obj: ImgRecord): void {
@@ -527,4 +544,87 @@ function galleryPCount(): void {
         }
         updateC();
     });
+}
+
+function galleryHTCount(): void {
+    hordeT.forEach(ele => {
+        const tempV = +ele.textContent!;
+        const step = tempV / 250;
+        ele.textContent = "0";
+
+        const updateC = () => {
+            const c = +ele.textContent!;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateC, 50)
+            } else {
+                ele.textContent = tempV.toString();
+            }
+        }
+        updateC();
+    });
+}
+
+function galleryCTCount(): void {
+    casualT.forEach(ele => {
+        const tempV = +ele.textContent!;
+        const step = tempV / 150;
+        ele.textContent = "0";
+
+        const updateC = () => {
+            const c = +ele.textContent!;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateC, 50)
+            } else {
+                ele.textContent = tempV.toString();
+            }
+        }
+        updateC();
+    });
+}
+
+// SCRIPTS for Gallery Object Data
+console.log(imgData[0])
+
+let totalKillSum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalK;
+    totalKillSum += tempValue!;
+    hordeTK!.textContent = totalKillSum.toString();
+}
+
+let totalSSum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalS;
+    totalSSum += tempValue!;
+    hordeTS!.textContent = totalSSum.toString();
+}
+
+let totalASum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalA;
+    totalASum += tempValue!;
+    hordeTA!.textContent = totalASum.toString();
+}
+
+let casualKillSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalK;
+    casualKillSum += tempValue!;
+    casualTK!.textContent = casualKillSum.toString();
+}
+
+let casualSSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalS;
+    casualSSum += tempValue!;
+    casualTS!.textContent = casualSSum.toString();
+}
+
+let casualPvpSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalPvP;
+    casualPvpSum += tempValue!;
+    casualTPvp!.textContent = casualPvpSum.toString();
 }

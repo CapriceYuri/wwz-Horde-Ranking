@@ -12,6 +12,10 @@ interface playerInfo {
 interface imgInfo {
     imgAuthor: string,
     imgUrl: string,
+    totalK?: number,
+    totalS?: number,
+    totalA?: number,
+    totalPvP?: number,
 }
 
 // HORDE HARD DIFFICULTY
@@ -385,54 +389,93 @@ const imgData: Array<imgInfo> = [
     {
         imgAuthor: "Maobai",
         imgUrl: "img1",
+        totalK: 118244,
+        totalS: 1698,
+        totalA: 4165,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img2",
+        totalK: 153373,
+        totalS: 2745,
+        totalA: 4439,
     },
     {
         imgAuthor: "Wintersky_Legendary",
         imgUrl: "img3",
+        totalK: 108484,
+        totalS: 1972,
+        totalA: 6508,
     },
     {
         imgAuthor: "lol",
         imgUrl: "img4",
+        totalK: 152590,
+        totalS: 2303,
+        totalA: 4999,
     },
     {
         imgAuthor: "XxFriction",
         imgUrl: "img5",
+        totalK: 89711,
+        totalS: 1572,
+        totalA: 3293,
     },
     {
         imgAuthor: "XxFriction",
         imgUrl: "img12",
+        totalK: 52084,
+        totalS: 1013,
+        totalA: 1494,
     },
     {
         imgAuthor: "gogu",
         imgUrl: "img6",
+        totalK: 127690,
+        totalS: 1972,
+        totalA: 6508,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img7",
+        totalK: 126434,
+        totalS: 1300,
+        totalA: 2740,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img8",
+        totalK: 122247,
+        totalS: 2421,
+        totalA: 1579,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img9",
+        totalK: 126747,
+        totalS: 1926,
+        totalA: 882,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img10",
+        totalK: 29463,
+        totalS: 313,
+        totalA: 1610,
     },
     {
         imgAuthor: "Maobai",
         imgUrl: "img11",
+        totalK: 130097,
+        totalS: 1925,
+        totalA: 4087,
     },
     {
         imgAuthor: "BudiPratomo",
         imgUrl: "img13",
+        totalK: 77546,
+        totalS: 1314,
+        totalA: 1878,
     },
 ]
 
@@ -440,50 +483,86 @@ const imgPdata: Array<imgInfo> = [
     {
         imgAuthor: "ABA",
         imgUrl: "p12",
+        totalK: 1192,
+        totalS: 24,
+        totalPvP: 0,
     },
     {
         imgAuthor: 'Mewtality',
-        imgUrl: "p1"
+        imgUrl: "p1",
+        totalK: 186,
+        totalPvP: 40,
+        totalS: 0,
     },
     {
         imgAuthor: 'Mewtality',
-        imgUrl: "p2"
+        imgUrl: "p2",
+        totalK: 191,
+        totalPvP: 102,
+        totalS: 0,
     },
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
-        imgUrl: "p3"
+        imgUrl: "p3",
+        totalK: 3056,
+        totalS: 47,
+        totalPvP: 0,
     },
     {
         imgAuthor: 'Zim',
-        imgUrl: "p4"
+        imgUrl: "p4",
+        totalK: 2923,
+        totalS: 36,
+        totalPvP: 0,
     },
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
-        imgUrl: "p5"
+        imgUrl: "p5",
+        totalK: 2114,
+        totalS: 54,
+        totalPvP: 0,
     },
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
-        imgUrl: "p6"
+        imgUrl: "p6",
+        totalK: 200,
+        totalPvP: 72,
+        totalS: 0,
     },
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
-        imgUrl: "p7"
+        imgUrl: "p7",
+        totalK: 433,
+        totalPvP: 77,
+        totalS: 0,
     },
     {
         imgAuthor: 'Mewtality',
-        imgUrl: "p8"
+        imgUrl: "p8",
+        totalK: 341,
+        totalPvP: 106,
+        totalS: 0,
     },
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
-        imgUrl: "p9"
+        imgUrl: "p9",
+        totalK: 3276,
+        totalS: 86,
+        totalPvP: 0,
     },
     {
         imgAuthor: 'xD3viLzx',
-        imgUrl: "p10"
+        imgUrl: "p10",
+        totalPvP: 0,
+        totalS: 0,
+        totalK: 0,
     },
     {
         imgAuthor: 'xD3viLzx',
-        imgUrl: "p11"
+        imgUrl: "p11",
+        totalPvP: 0,
+        totalS: 0,
+        totalK: 0,
     },
 ]
 

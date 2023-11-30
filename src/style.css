@@ -282,6 +282,20 @@ a {
   font-size: 40px;
 }
 
+.p-count-num2 {
+  color: #A51C30;
+  font: bold xx-large monospace;
+  font-size: 50px;
+  text-shadow: 1px 1px 4px #FFD700;
+}
+
+.p-count-num3 {
+  color: #EF0107;
+  font: bold xx-large monospace;
+  font-size: 70px;
+  text-shadow: 1px 1px 5px #BC13FE;
+}
+
 .p-count-word {
   color: #FFBF00;
 }

@@ -60,6 +60,7 @@ gallerySelect.addEventListener('click', () => {
     galleryPBox.style.display = 'none';
     galleryBox.style.display = 'block';
     galleryCount();
+    galleryHTCount();
 });
 galleryPSelect.addEventListener('click', () => {
     normalSelect.checked = false;
@@ -72,6 +73,7 @@ galleryPSelect.addEventListener('click', () => {
     galleryBox.style.display = 'none';
     galleryPBox.style.display = 'block';
     galleryPCount();
+    galleryCTCount();
 });
 // Hard/Normal Maps
 const japanH = document.querySelector(".h-japan");
@@ -107,6 +109,14 @@ const nyNV = document.querySelector("#nyNV");
 const jNV = document.querySelector("#jNV");
 const galleryValue = document.querySelectorAll(".gsection");
 const galleryPValue = document.querySelectorAll(".psection");
+const hordeTK = document.querySelector('.horde-totalK');
+const hordeTA = document.querySelector('.horde-totalA');
+const hordeTS = document.querySelector('.horde-totalS');
+const casualTK = document.querySelector('.casual-TK');
+const casualTPvp = document.querySelector('.casual-TPvp');
+const casualTS = document.querySelector('.casual-TS');
+const hordeT = document.querySelectorAll('.hordeT');
+const casualT = document.querySelectorAll('.casualT');
 function addRecord(obj, chapter) {
     const tempRow = document.createElement("tr");
     tempRow.classList.add("text-center", "align-middle");
@@ -448,4 +458,78 @@ function galleryPCount() {
         };
         updateC();
     });
+}
+function galleryHTCount() {
+    hordeT.forEach(ele => {
+        const tempV = +ele.textContent;
+        const step = tempV / 250;
+        ele.textContent = "0";
+        const updateC = () => {
+            const c = +ele.textContent;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`;
+                setTimeout(updateC, 50);
+            }
+            else {
+                ele.textContent = tempV.toString();
+            }
+        };
+        updateC();
+    });
+}
+function galleryCTCount() {
+    casualT.forEach(ele => {
+        const tempV = +ele.textContent;
+        const step = tempV / 150;
+        ele.textContent = "0";
+        const updateC = () => {
+            const c = +ele.textContent;
+            if (c < tempV) {
+                ele.textContent = `${Math.ceil(c + step)}`;
+                setTimeout(updateC, 50);
+            }
+            else {
+                ele.textContent = tempV.toString();
+            }
+        };
+        updateC();
+    });
+}
+// SCRIPTS for Gallery Object Data
+console.log(imgData[0]);
+let totalKillSum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalK;
+    totalKillSum += tempValue;
+    hordeTK.textContent = totalKillSum.toString();
+}
+let totalSSum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalS;
+    totalSSum += tempValue;
+    hordeTS.textContent = totalSSum.toString();
+}
+let totalASum = 0;
+for (let x = 0; x < imgData.length; x++) {
+    let tempValue = imgData[x].totalA;
+    totalASum += tempValue;
+    hordeTA.textContent = totalASum.toString();
+}
+let casualKillSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalK;
+    casualKillSum += tempValue;
+    casualTK.textContent = casualKillSum.toString();
+}
+let casualSSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalS;
+    casualSSum += tempValue;
+    casualTS.textContent = casualSSum.toString();
+}
+let casualPvpSum = 0;
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalPvP;
+    casualPvpSum += tempValue;
+    casualTPvp.textContent = casualPvpSum.toString();
 }
