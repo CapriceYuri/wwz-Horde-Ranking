@@ -94,6 +94,13 @@ const userData_RomeH: Array<playerInfo> = [
 ]
 const userData_SKH: Array<playerInfo> = [
     {
+        player: 'FengChen1998',
+        wave: '97',
+        src: 'https://www.bilibili.com/video/BV1Yz4y1w7GA?p=1',
+        src2: 'https://www.bilibili.com/video/BV1Yz4y1w7GA?p=3',
+        date: "11/14/2023"
+    },
+    {
         player: 'Horde Legends Team',
         wave: '86',
         src: 'https://www.twitch.tv/videos/1963207322',
@@ -180,10 +187,16 @@ const userData_NYH: Array<playerInfo> = [
 const userData_JH: Array<playerInfo> = [
     {
         player: 'Maobai Pro Team',
-        wave: '81',
-        src: 'https://www.youtube.com/watch?v=AkU3kfc2TLU&ab_channel=yyz',
-        date: "10/22/2023"
+        wave: '90',
+        src: 'https://www.bilibili.com/video/BV1bc411Q71D/?spm_id_from=333.337.search-card.all.click',
+        date: "11/30/2023"
     },
+    // {
+    //     player: 'Maobai Pro Team',
+    //     wave: '81',
+    //     src: 'https://www.youtube.com/watch?v=AkU3kfc2TLU&ab_channel=yyz',
+    //     date: "10/22/2023"
+    // },
     {
         player: 'SiberianPsych0',
         wave: '60',
