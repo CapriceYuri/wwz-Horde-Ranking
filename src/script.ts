@@ -359,13 +359,14 @@ for (let i = 0; i < leaderboardHardWave.length; i++) {
 function countUpRecord() {
     leaderboardHardWave.forEach((array) => {
         const target = +array.textContent!;
+        const step = target / 110;
         array.textContent = '0';
 
         const updateCountRecord = () => {
             const c = +array.textContent!;
             if (c < target) {
-                array.textContent = `${Math.ceil(c + 1)}`
-                setTimeout(updateCountRecord, 50)
+                array.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateCountRecord, 30)
             } else {
                 array.textContent = target.toString();
             }
@@ -425,13 +426,14 @@ for (let x = 0; x < timeAgo.length; x++) {
 function countUp() {
     timeAgo.forEach((array) => {
         const target = +array.textContent!;
+        const step = target / 75;
         array.textContent = '0';
 
         const updateCount = () => {
             const c = +array.textContent!;
             if (c < target) {
-                array.textContent = `${Math.ceil(c + 1)}`
-                setTimeout(updateCount, 50)
+                array.textContent = `${Math.ceil(c + step)}`
+                setTimeout(updateCount, 40)
             } else {
                 array.textContent = target.toString();
             }
