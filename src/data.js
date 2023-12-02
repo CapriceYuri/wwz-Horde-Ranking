@@ -472,6 +472,13 @@ const imgData = [
 ];
 const imgPdata = [
     {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p13",
+        totalK: 93,
+        totalS: 0,
+        totalPvP: 16,
+    },
+    {
         imgAuthor: "ABA",
         imgUrl: "p12",
         totalK: 1192,
