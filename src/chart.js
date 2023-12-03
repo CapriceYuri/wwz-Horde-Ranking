@@ -324,7 +324,7 @@ const dataM = {
     ],
     datasets: [{
         label: 'TINA',
-        data: [t_h, t_m, t_e, t_s, t_z, a_pv],
+        data: [t_h, t_m, t_e, t_s, t_z, t_pv],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
