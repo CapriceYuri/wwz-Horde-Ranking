@@ -317,16 +317,16 @@ console.log(a_z)
 
 const dataM = {
     labels: [
-        'HEADSHOT',
-        'MELEE',
-        'EXPLOSIVE',
         'SPECIAL',
+        'MELEE',
+        'HEADSHOT',
+        'EXPLOSIVE',
         'COMMON',
         'PVP',
     ],
     datasets: [{
         label: 'TINA',
-        data: [t_h, t_m, t_e, t_s, t_z, t_pv],
+        data: [t_s, t_m, t_h, t_e, t_z, t_pv],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
@@ -335,7 +335,7 @@ const dataM = {
         pointHoverBackgroundColor: 'green',
     }, {
         label: 'MEW',
-        data: [m_h, m_m, m_e, m_s, m_z, m_pv],
+        data: [m_s, m_m, m_h, m_e, m_z, m_pv],
         fill: true,
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgb(54, 162, 235)',
@@ -344,7 +344,7 @@ const dataM = {
         pointHoverBackgroundColor: '#f96d00',
     }, {
         label: 'AEDONIS',
-        data: [a_h, a_m, a_e, a_s, a_z, a_pv],
+        data: [a_s, a_m, a_h, a_e, a_z, a_pv],
         fill: true,
         backgroundColor: 'rgba(60,179,113,0.2)',
         borderColor: '	rgb(60,179,113)',
