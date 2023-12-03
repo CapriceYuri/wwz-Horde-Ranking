@@ -587,7 +587,6 @@ function galleryCTCount(): void {
 }
 
 // SCRIPTS for Gallery Object Data
-console.log(imgData[0])
 
 let totalKillSum = 0;
 for (let x = 0; x < imgData.length; x++) {

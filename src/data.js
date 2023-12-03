@@ -564,3 +564,57 @@ const imgPdata = [
     },
 ];
 export { imgData, imgPdata };
+// Charting Data
+const chart_dataH = [
+    {
+        map: 'tokyoH',
+        total: 74704,
+        special: 1435,
+        zeke: 73269,
+        melee: 559,
+        explosive: 5881,
+        head: 3802,
+        body: 64462,
+    },
+    {
+        map: 'romeH',
+        total: 122835,
+        special: 2106,
+        zeke: 120729,
+        melee: 1306,
+        explosive: 15759,
+        head: 2377,
+        body: 103393,
+    },
+    {
+        map: 'koreaH',
+        total: 134002,
+        special: 1956,
+        zeke: 132046,
+        melee: 300,
+        explosive: 26838,
+        head: 4174,
+        body: 102690,
+    },
+    {
+        map: 'newyorkH',
+        total: 109383,
+        special: 1563,
+        zeke: 107820,
+        melee: 139,
+        explosive: 9376,
+        head: 2732,
+        body: 97136,
+    },
+    {
+        map: 'jerusalem',
+        total: 85388,
+        special: 1388,
+        zeke: 84000,
+        melee: 241,
+        explosive: 1301,
+        head: 4610,
+        body: 79236,
+    },
+];
+export { chart_dataH };
