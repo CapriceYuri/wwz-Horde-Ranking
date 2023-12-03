@@ -1,5 +1,6 @@
 import { chart_dataH, chart_dataN } from './data.js';
 import { modA, modM, modT } from './data.js';
+import { imgData, imgPdata } from './data.js';
 
 const ctx = document.getElementById('pie');
 const ctx2 = document.getElementById('pie2');
@@ -385,3 +386,6 @@ new Chart(ctxM, configM)
 console.log(modA)
 console.log(modM)
 console.log(modT)
+
+document.querySelector('.size-g').textContent = imgData.length;
+document.querySelector('.size-p').textContent = imgPdata.length;
