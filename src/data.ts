@@ -522,6 +522,41 @@ const imgData: Array<imgInfo> = [
 const imgPdata: Array<imgInfo> = [
     {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p18",
+        totalK: 122,
+        totalS: 0,
+        totalPvP: 71,
+    },
+    {
+        imgAuthor: 'Aedonis',
+        imgUrl: "p17",
+        totalK: 2576,
+        totalS: 38,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'Erase',
+        imgUrl: "p16",
+        totalK: 2416,
+        totalS: 37,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p15",
+        totalK: 262,
+        totalS: 0,
+        totalPvP: 80,
+    },
+    {
+        imgAuthor: 'Aedonis',
+        imgUrl: "p14",
+        totalK: 1842,
+        totalS: 40,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
         imgUrl: "p13",
         totalK: 93,
         totalS: 0,

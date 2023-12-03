@@ -181,7 +181,6 @@ document.querySelector('.h-body').textContent = `${(100 * (kill_body / totalH)).
 document.querySelector('.h-special').textContent = `${(100 * (kill_special / totalH)).toFixed(2)}%`;
 document.querySelector('.h-zeke').textContent = `${(100 * (kill_zeke / totalH)).toFixed(2)}%`;
 document.querySelector('.h-ratio').textContent = `1:${Math.trunc(kill_zeke / kill_special)}`;
-console.log(kill_zeke / kill_special)
 
 document.querySelector('.n-melee').textContent = `${(100 * (kill_Nmelee / totalN)).toFixed(2)}%`;
 document.querySelector('.n-explosive').textContent = `${(100 * (kill_Nexplosive / totalN)).toFixed(2)}%`;
@@ -190,7 +189,6 @@ document.querySelector('.n-body').textContent = `${(100 * (kill_Nbody / totalN))
 document.querySelector('.n-special').textContent = `${(100 * (kill_Nspecial / totalN)).toFixed(2)}%`;
 document.querySelector('.n-zeke').textContent = `${(100 * (kill_Nzeke / totalN)).toFixed(2)}%`;
 document.querySelector('.n-ratio').textContent = `1:${Math.trunc(kill_Nzeke / kill_Nspecial)}`;
-console.log(kill_Nzeke / kill_Nspecial)
 
 // Testing Radar Chart
 
@@ -313,7 +311,6 @@ const t_pv = `${Math.round(100 * (t_pvp / (t_pvp + m_pvp + a_pvp)))}`
 const m_pv = `${Math.round(100 * (m_pvp / (t_pvp + m_pvp + a_pvp)))}`
 const a_pv = `${Math.round(100 * (a_pvp / (t_pvp + m_pvp + a_pvp)))}`
 
-console.log(a_z)
 
 const dataM = {
     labels: [

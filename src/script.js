@@ -408,7 +408,7 @@ function addGalleyImage(obj) {
 }
 function addGalleyPImage(obj) {
     const tempCol = document.createElement("div");
-    tempCol.classList.add("col-xl-6", "col-12", "p-2", "align-items-center", "d-flex");
+    tempCol.classList.add("col-xl-6", "col-12", "p-2");
     const tempColCard = document.createElement("div");
     tempColCard.classList.add('card', 'text-bg-dark');
     const imgContent = document.createElement('img');
