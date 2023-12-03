@@ -670,3 +670,80 @@ const chart_dataN = [
     },
 ];
 export { chart_dataH, chart_dataN };
+// Radar Charting
+const modM = [
+    {
+        pvp: 18,
+        common: 13,
+    },
+    {
+        pvp: 31,
+        common: 15,
+    },
+    {
+        pvp: 14,
+        common: 5,
+    },
+    {
+        pvp: 21,
+        common: 177,
+    },
+    {
+        pvp: 48,
+        common: 36,
+    }
+];
+const modT = [
+    {
+        pvp: 11,
+        common: 43,
+    },
+    {
+        special: 35,
+        common: 2270,
+    },
+    {
+        special: 16,
+        common: 1086,
+    },
+    {
+        special: 43,
+        common: 1190,
+    },
+    {
+        pvp: 34,
+        common: 14,
+    },
+    {
+        pvp: 35,
+        common: 135,
+    },
+    {
+        special: 70,
+        common: 2178,
+    }
+];
+const modA = [
+    {
+        headshot: 670,
+        explosive: 144,
+    },
+    {
+        headshot: 700,
+        explosive: 136,
+    },
+    {
+        headshot: 480,
+        explosive: 106,
+    },
+    {
+        common: 1791,
+        special: 10,
+        melee: 2,
+    },
+    {
+        common: 658,
+        special: 8,
+    }
+];
+export { modA, modM, modT };
