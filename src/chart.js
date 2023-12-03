@@ -313,6 +313,8 @@ const t_pv = `${Math.round(100 * (t_pvp / (t_pvp + m_pvp + a_pvp)))}`
 const m_pv = `${Math.round(100 * (m_pvp / (t_pvp + m_pvp + a_pvp)))}`
 const a_pv = `${Math.round(100 * (a_pvp / (t_pvp + m_pvp + a_pvp)))}`
 
+console.log(a_z)
+
 const dataM = {
     labels: [
         'HEADSHOT',
