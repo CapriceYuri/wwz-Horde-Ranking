@@ -191,6 +191,8 @@ document.querySelector('.n-special').textContent = `${(100 * (kill_Nspecial / to
 document.querySelector('.n-zeke').textContent = `${(100 * (kill_Nzeke / totalN)).toFixed(2)}%`;
 document.querySelector('.n-ratio').textContent = `1:${Math.trunc(kill_Nzeke / kill_Nspecial)}`;
 
+document.querySelector('.size-g').textContent = imgData.length;
+document.querySelector('.size-p').textContent = imgPdata.length;
 // Testing Radar Chart
 
 // Variables MOD
@@ -387,5 +389,3 @@ console.log(modA)
 console.log(modM)
 console.log(modT)
 
-document.querySelector('.size-g').textContent = imgData.length;
-document.querySelector('.size-p').textContent = imgPdata.length;
