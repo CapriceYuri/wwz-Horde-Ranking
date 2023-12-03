@@ -617,4 +617,56 @@ const chart_dataH = [
         body: 79236,
     },
 ];
-export { chart_dataH };
+const chart_dataN = [
+    {
+        map: 'tokyoN',
+        total: 69416,
+        special: 562,
+        zeke: 68854,
+        melee: 612,
+        explosive: 9640,
+        head: 1632,
+        body: 57532,
+    },
+    {
+        map: 'romeN',
+        total: 13531,
+        special: 105,
+        zeke: 13426,
+        melee: 183,
+        explosive: 930,
+        head: 451,
+        body: 11967,
+    },
+    {
+        map: 'koreaN',
+        total: 116632,
+        special: 1659,
+        zeke: 114973,
+        melee: 1140,
+        explosive: 11252,
+        head: 5411,
+        body: 98829,
+    },
+    {
+        map: 'newyorkN',
+        total: 53261,
+        special: 390,
+        zeke: 52871,
+        melee: 481,
+        explosive: 4806,
+        head: 2702,
+        body: 45272,
+    },
+    {
+        map: 'jerusalemN',
+        total: 39329,
+        special: 335,
+        zeke: 38994,
+        melee: 360,
+        explosive: 1642,
+        head: 1512,
+        body: 35815,
+    },
+];
+export { chart_dataH, chart_dataN };

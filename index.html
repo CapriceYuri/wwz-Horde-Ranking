@@ -43,10 +43,10 @@
     <div class="d-flex justify-content-center my-4">
         <div class="btn-group" role="group2" aria-label="horde2">
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradioG">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradioG" checked>
             <label class="btn btn-outline-light" for="btnradioG">HORDE GALLERY</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradioP" checked>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradioP">
             <label class="btn btn-outline-light" for="btnradioP">PVP / RUN GALLERY</label>
         </div>
     </div>
@@ -88,6 +88,76 @@
                 <div class=" p-count-num3 p1 horde-totalK hordeT"></div>
                 <small class="fst-italic h4 text-warning">TOTAL <span><img src="images/normalZ.png"></span> KILLS</small>
             </div>
+        </div>
+
+        <div class="container my-2">
+            <div class="row">
+                <div class="col-lg-5 col-11 mx-auto my-4">
+                    <canvas id="pie"></canvas>
+                </div>
+                <div class="col-lg-5 col-11 mx-auto my-4">
+                    <canvas id="pie2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container my-2">
+            <div class="row">
+                <div class="col-lg-5 col-11 mx-auto my-4">
+                    <canvas id="pie3"></canvas>
+                </div>
+                <div class="col-lg-5 col-11 mx-auto my-4">
+                    <canvas id="pie4"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <table class="table table-sm table-borderless rounded-5 table-dark">
+                <thead class="text-center">
+                    <tr class="align-middle font-monospace fs-5">
+                        <th scope="col" class="text-danger h3">HARD</th>
+                        <th scope="col" class="text-warning h3">Stats(%)</th>
+                        <th scope="col" class="text-primary h3">NORMAL</th>
+                    </tr>
+                </thead>
+                <tbody class="font-monospace">
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-head"></td>
+                        <td class="text-warning">Headshot</td>
+                        <td class="text-primary n-head"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-body"></td>
+                        <td class="text-warning">Body</td>
+                        <td class="text-primary n-body"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-melee"></td>
+                        <td class="text-warning">Melee</td>
+                        <td class="text-primary n-melee"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-explosive"></td>
+                        <td class="text-warning">Explosive</td>
+                        <td class="text-primary n-explosive"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-special"></td>
+                        <td class="text-warning">Sepcial Zeke</td>
+                        <td class="text-primary n-special"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-zeke"></td>
+                        <td class="text-warning">Common Zeke</td>
+                        <td class="text-primary n-zeke"></td>
+                    </tr>
+                    <tr class="align-middle text-center">
+                        <td class="text-danger h-ratio"></td>
+                        <td class="text-warning">Special Ratio</td>
+                        <td class="text-primary n-ratio"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="row gallery-box">
@@ -132,19 +202,6 @@
                 <small class="fst-italic h4 text-warning">TOTAL <span><img src="images/pvpIcon.png"></span> KILLS</small>
             </div>
         </div>
-
-        <div class="container my-2">
-            <div class="row">
-                <div class="col-lg-5 col-11 mx-auto my-4">
-                    <canvas id="pie"></canvas>
-                </div>
-                <div class="col-lg-5 col-11 mx-auto my-4">
-                    <canvas id="pie2"></canvas>
-                </div>
-            </div>
-        </div>
-
-
 
         <div class="row galleryP-box">
         </div>

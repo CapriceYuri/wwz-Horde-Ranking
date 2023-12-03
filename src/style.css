@@ -42,11 +42,11 @@ a {
 }
 
 .BOXG {
-  display: none;
+  display: block;
 }
 
 .BOXP {
-  display: block;
+  display: none;
 }
 
 .vibrate {
