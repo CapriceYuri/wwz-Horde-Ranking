@@ -1,6 +1,5 @@
 import { chart_dataH, chart_dataN } from './data.js';
 import { imgData, imgPdata } from './data.js';
-import { playerS, playerD } from './data.js';
 
 const ctx = document.getElementById('pie');
 const ctx2 = document.getElementById('pie2');
