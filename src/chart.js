@@ -195,112 +195,112 @@ document.querySelector('.size-g').textContent = imgData.length;
 document.querySelector('.size-p').textContent = imgPdata.length;
 // Testing Radar Chart
 
-let dkill = 0;
-let dspec = 0;
-let dmelee = 0;
-let dexplo = 0
-let dhead = 0;
-let ddmg = 0;
+// let dkill = 0;
+// let dspec = 0;
+// let dmelee = 0;
+// let dexplo = 0
+// let dhead = 0;
+// let ddmg = 0;
 
-let skill = 0;
-let sspec = 0;
-let smelee = 0;
-let sexplo = 0;
-let shead = 0;
-let sdmg = 0;
+// let skill = 0;
+// let sspec = 0;
+// let smelee = 0;
+// let sexplo = 0;
+// let shead = 0;
+// let sdmg = 0;
 
-for (let d = 0; d < playerD.length; d++) {
-    dkill += playerD[d].kill;
-    dspec += playerD[d].special;
-    dmelee += playerD[d].melee;
-    dexplo += playerD[d].explosive;
-    dhead += playerD[d].headshot;
-    ddmg += playerD[d].damage;
-}
-console.log(dkill, dspec, dmelee, dhead, ddmg)
+// for (let d = 0; d < playerD.length; d++) {
+//     dkill += playerD[d].kill;
+//     dspec += playerD[d].special;
+//     dmelee += playerD[d].melee;
+//     dexplo += playerD[d].explosive;
+//     dhead += playerD[d].headshot;
+//     ddmg += playerD[d].damage;
+// }
+// console.log(dkill, dspec, dmelee, dhead, ddmg)
 
-for (let s = 0; s < playerS.length; s++) {
-    skill += playerS[s].kill;
-    sspec += playerS[s].special;
-    smelee += playerS[s].melee;
-    sexplo += playerS[s].explosive;
-    shead += playerS[s].headshot;
-    sdmg += playerS[s].damage;
-}
-console.log(skill, sspec, smelee, shead, sdmg)
+// for (let s = 0; s < playerS.length; s++) {
+//     skill += playerS[s].kill;
+//     sspec += playerS[s].special;
+//     smelee += playerS[s].melee;
+//     sexplo += playerS[s].explosive;
+//     shead += playerS[s].headshot;
+//     sdmg += playerS[s].damage;
+// }
+// console.log(skill, sspec, smelee, shead, sdmg)
 
-let dbody = (dkill - dmelee - dexplo - dhead);
-let sbody = (skill - smelee - sexplo - shead);
-console.log(dbody, sbody)
+// let dbody = (dkill - dmelee - dexplo - dhead);
+// let sbody = (skill - smelee - sexplo - shead);
+// console.log(dbody, sbody)
 
-const dkill_melee = `${Math.trunc(100 * (dmelee) / (dkill))}`;
-const dkill_explosive = `${Math.trunc(100 * (dexplo) / (dkill))}`;
-const dkill_head = `${Math.trunc(100 * (dhead) / (dkill))}`;
-const dkill_body = `${Math.trunc(100 * (dbody) / (dkill))}`;
+// const dkill_melee = `${Math.trunc(100 * (dmelee) / (dkill))}`;
+// const dkill_explosive = `${Math.trunc(100 * (dexplo) / (dkill))}`;
+// const dkill_head = `${Math.trunc(100 * (dhead) / (dkill))}`;
+// const dkill_body = `${Math.trunc(100 * (dbody) / (dkill))}`;
 
-const skill_melee = `${Math.trunc(100 * (smelee) / (skill))}`;
-const skill_explosive = `${Math.trunc(100 * (sexplo) / (skill))}`;
-const skill_head = `${Math.trunc(100 * (shead) / (skill))}`;
-const skill_body = `${Math.trunc(100 * (sbody) / (skill))}`;
+// const skill_melee = `${Math.trunc(100 * (smelee) / (skill))}`;
+// const skill_explosive = `${Math.trunc(100 * (sexplo) / (skill))}`;
+// const skill_head = `${Math.trunc(100 * (shead) / (skill))}`;
+// const skill_body = `${Math.trunc(100 * (sbody) / (skill))}`;
 
 
 
-// Variables MOD
-const dataM = {
-    labels: [
-        'MELEE',
-        'BODY',
-        'HEADSHOT',
-        'EXPLOSIVE',
-    ],
-    datasets: [{
-        label: 'xD3viLz',
-        data: [dkill_melee, dkill_body, dkill_explosive, dkill_head],
-        fill: true,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgb(255, 99, 132)',
-        pointBackgroundColor: 'rgb(255, 99, 132)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: 'green',
-    }, {
-        label: 'SiberianPsych0',
-        data: [skill_melee, skill_body, skill_explosive, skill_head],
-        fill: true,
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgb(54, 162, 235)',
-        pointBackgroundColor: 'rgb(54, 162, 235)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#f96d00',
-    }]
-};
+// // Variables MOD
+// const dataM = {
+//     labels: [
+//         'MELEE',
+//         'BODY',
+//         'HEADSHOT',
+//         'EXPLOSIVE',
+//     ],
+//     datasets: [{
+//         label: 'xD3viLz',
+//         data: [dkill_melee, dkill_body, dkill_explosive, dkill_head],
+//         fill: true,
+//         backgroundColor: 'rgba(255, 99, 132, 0.2)',
+//         borderColor: 'rgb(255, 99, 132)',
+//         pointBackgroundColor: 'rgb(255, 99, 132)',
+//         pointBorderColor: '#fff',
+//         pointHoverBackgroundColor: 'green',
+//     }, {
+//         label: 'SiberianPsych0',
+//         data: [skill_melee, skill_body, skill_explosive, skill_head],
+//         fill: true,
+//         backgroundColor: 'rgba(54, 162, 235, 0.2)',
+//         borderColor: 'rgb(54, 162, 235)',
+//         pointBackgroundColor: 'rgb(54, 162, 235)',
+//         pointBorderColor: '#fff',
+//         pointHoverBackgroundColor: '#f96d00',
+//     }]
+// };
 
-const configM = {
-    type: 'radar',
-    data: dataM,
-    options: {
-        elements: {
-            line: {
-                borderWidth: 4,
-            },
-        },
-        scales: {
-            r: {
-                angleLines: {
-                    color: '#a2a8d3',
-                },
-                grid: {
-                    color: '#a2a8d3',
-                },
-                pointLabels: {
-                    color: 'Orange'
-                },
-                ticks: {
-                    color: 'orange',
-                    backdropColor: '#1e1e1e'
-                }
-            }
-        }
-    },
-};
+// const configM = {
+//     type: 'polarArea',
+//     data: dataM,
+//     options: {
+//         elements: {
+//             line: {
+//                 borderWidth: 4,
+//             },
+//         },
+//         scales: {
+//             r: {
+//                 angleLines: {
+//                     color: '#a2a8d3',
+//                 },
+//                 grid: {
+//                     color: '#a2a8d3',
+//                 },
+//                 pointLabels: {
+//                     color: 'Orange'
+//                 },
+//                 ticks: {
+//                     color: 'orange',
+//                     backdropColor: '#1e1e1e'
+//                 }
+//             }
+//         }
+//     },
+// };
 
-new Chart(ctxM, configM)
+// new Chart(ctxM, configM)

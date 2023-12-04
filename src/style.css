@@ -302,5 +302,13 @@ a {
 }
 
 .p-count-word {
-  color: #FFBF00;
+  color: #9400D3;
+}
+
+.purple {
+  color: #9370DB;
+}
+
+.purple-border {
+  border-color: #9370DB;
 }
