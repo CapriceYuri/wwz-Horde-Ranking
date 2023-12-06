@@ -375,29 +375,6 @@ function countUpRecord() {
     });
 } countUpRecord();
 
-// LIGHT & DARK MODE
-const lightModeBtn = document.querySelector("#light-mode") as HTMLButtonElement;
-const darkModeBtn = document.querySelector("#dark-mode") as HTMLButtonElement;
-const pageBody = document.querySelector("body") as HTMLBodyElement;
-
-lightModeBtn.addEventListener('click', () => {
-    pageBody.style.backgroundColor = "#696969";
-    darkModeBtn.style.display = "block";
-    lightModeBtn.style.display = "none";
-
-    leaderboardRecord.forEach(ele => ele.classList.add("text-dark", "transition"))
-})
-
-darkModeBtn.addEventListener('click', () => {
-    pageBody.style.backgroundColor = "#1e1e1e"
-    darkModeBtn.style.display = "none";
-    lightModeBtn.style.display = "block";
-
-    leaderboardRecord.forEach(ele => ele.classList.remove("text-dark"))
-    leaderboardRecord.forEach(ele => ele.classList.add("text-light"))
-
-})
-
 // Calculate Record Time
 const timeAgo = document.querySelectorAll(".timeago");
 
@@ -492,7 +469,7 @@ function addGalleyPImage(obj: ImgRecord): void {
     tempColCard.classList.add('card', 'text-bg-dark');
 
     const imgContent = document.createElement('img');
-    imgContent.classList.add('card-img', 'card-fluid');
+    imgContent.classList.add('card-img', 'img-fluid');
     imgContent.setAttribute('src', `images/${obj.imgUrl}.png`);
 
     const imgContentAuthor = document.createElement('div');

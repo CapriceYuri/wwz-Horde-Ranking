@@ -268,15 +268,6 @@ a {
     opacity: 1;
   }
 }
-.BOXG .card {
-  height: 100%;
-}
-
-.gallery-box img,
-.galleyP-box img {
-  height: 100%;
-}
-
 .p-count-num {
   color: #E62020;
   font: bold xx-large monospace;

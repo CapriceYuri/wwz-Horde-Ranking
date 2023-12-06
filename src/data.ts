@@ -512,6 +512,20 @@ const imgData: Array<imgInfo> = [
 
 const imgPdata: Array<imgInfo> = [
     {
+        imgAuthor: 'ABA-180MM',
+        imgUrl: "p24",
+        totalK: 2308,
+        totalS: 33,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'ABA-180MM',
+        imgUrl: "p23",
+        totalK: 2032,
+        totalS: 40,
+        totalPvP: 0,
+    },
+    {
         imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
         imgUrl: "p22",
         totalK: 213,
@@ -551,13 +565,6 @@ const imgPdata: Array<imgInfo> = [
         imgUrl: "p17",
         totalK: 2576,
         totalS: 38,
-        totalPvP: 0,
-    },
-    {
-        imgAuthor: 'Erase',
-        imgUrl: "p16",
-        totalK: 2416,
-        totalS: 37,
         totalPvP: 0,
     },
     {
