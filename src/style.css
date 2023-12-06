@@ -311,3 +311,19 @@ a {
 .blue-border {
   border-color: #007FFF;
 }
+
+.pgBlue {
+  background-color: #0077c0;
+}
+
+.pgPink {
+  background-color: #FF69B4;
+}
+
+.blueT {
+  color: #0077c0;
+}
+
+.pinkT {
+  color: #FF69B4;
+}

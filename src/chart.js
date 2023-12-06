@@ -11,6 +11,9 @@ const pg_bodyN = document.querySelector(".pg-bodyN")
 const pg_exN = document.querySelector(".pg-exN")
 const pg_meleeN = document.querySelector(".pg-meleeN")
 
+const pgTina = document.querySelector(".pg-tina");
+const pgWwz = document.querySelector(".pg-wwz");
+const pgMew = document.querySelector(".pg-mew");
 
 // Chart Hard
 let totalH = 0;
@@ -98,7 +101,7 @@ document.querySelector('.n-ratio').textContent = `1:${Math.trunc(kill_Nzeke / ki
 document.querySelector('.size-g').textContent = imgData.length;
 document.querySelector('.size-p').textContent = imgPdata.length;
 
-// Progress Bat
+// Progress Bars Horde Gallery
 pg_head.setAttribute('style', `width: ${(100 * (kill_headshot / totalH)).toFixed(2)}%;`);
 pg_body.setAttribute('style', `width: ${(100 * (kill_body / totalH)).toFixed(2)}%`);
 pg_ex.setAttribute('style', `width: ${(100 * (kill_explosive / totalH)).toFixed(2)}%`);
@@ -108,3 +111,20 @@ pg_headN.setAttribute('style', `width: ${(100 * (kill_Nheadshot / totalN)).toFix
 pg_bodyN.setAttribute('style', `width: ${(100 * (kill_Nbody / totalN)).toFixed(2)}%`);
 pg_exN.setAttribute('style', `width: ${(100 * (kill_Nexplosive / totalN)).toFixed(2)}%`);
 pg_meleeN.setAttribute('style', `width: ${(100 * (kill_Nmelee / totalN)).toFixed(2)}%`);
+
+// Progress Bars PVP Gallery
+const v_tina = 296;
+const v_mew = 145;
+let v_total = 0;
+
+for (let x = 0; x < imgPdata.length; x++) {
+    let tempValue = imgPdata[x].totalPvP;
+    v_total += tempValue;
+}
+console.log(v_total)
+const v_wwz = v_total - v_tina - v_mew;
+console.log(v_wwz)
+
+pgTina.setAttribute("style", `width:${100 * (v_tina / v_total)}%`)
+pgWwz.setAttribute("style", `width:${(100 * (v_wwz / v_total)) + 1}%`)
+pgMew.setAttribute("style", `width:${100 * (v_mew / v_total)}%`)

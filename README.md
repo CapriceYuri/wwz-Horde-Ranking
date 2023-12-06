@@ -1,3 +1,3 @@
-# wwz-Horde-Ranking
+World War Z: The Game - Community-Ranking
 
-Site: https://capriceyuri.github.io/wwz-Horde-Ranking/
+Site: wwzRanking.
