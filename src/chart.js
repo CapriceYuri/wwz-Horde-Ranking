@@ -114,7 +114,7 @@ pg_meleeN.setAttribute('style', `width: ${(100 * (kill_Nmelee / totalN)).toFixed
 
 // Progress Bars PVP Gallery
 const v_tina = 296;
-const v_mew = 145;
+const v_mew = 186;
 let v_total = 0;
 
 for (let x = 0; x < imgPdata.length; x++) {

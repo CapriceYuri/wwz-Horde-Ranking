@@ -73,7 +73,7 @@ const userData_RomeH = [
 ];
 const userData_SKH = [
     {
-        player: 'FengChen1998',
+        player: 'Maobai Pro Team',
         wave: '97',
         src: 'https://www.bilibili.com/video/BV1Yz4y1w7GA?p=1',
         src2: 'https://www.bilibili.com/video/BV1Yz4y1w7GA?p=3',
@@ -128,12 +128,12 @@ const userData_SKH = [
     //     wave: '86',
     //     src: 'https://www.youtube.com/watch?v=ALT7tc8lYTA&ab_channel=yyz',
     // },
-    {
-        player: 'Maobai Pro Team',
-        wave: '94',
-        src: 'https://www.youtube.com/watch?v=miwXKuSSlco&t=407s',
-        date: "9/28/2023"
-    },
+    // {
+    //     player: 'Maobai Pro Team',
+    //     wave: '94',
+    //     src: 'https://www.youtube.com/watch?v=miwXKuSSlco&t=407s',
+    //     date: "9/28/2023"
+    // },
 ];
 const userData_NYH = [
     {
@@ -471,6 +471,27 @@ const imgData = [
     },
 ];
 const imgPdata = [
+    {
+        imgAuthor: 'Niubi8852',
+        imgUrl: "p25",
+        totalK: 2101,
+        totalS: 25,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'ACE 𝔗𝔦𝔫𝔞 𓆩♡𓆪',
+        imgUrl: "p26",
+        totalK: 1434,
+        totalS: 36,
+        totalPvP: 0,
+    },
+    {
+        imgAuthor: 'Mewtality',
+        imgUrl: "p16",
+        totalK: 132,
+        totalS: 0,
+        totalPvP: 63,
+    },
     {
         imgAuthor: 'ABA-180MM',
         imgUrl: "p24",
