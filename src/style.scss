@@ -402,3 +402,9 @@ a {
 .gold-border {
     border-color: #FFD700;
 }
+
+.admin-color,
+.admin-border,
+.admin-name {
+    transition: 500ms ease-in-out;
+}

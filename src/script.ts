@@ -606,3 +606,23 @@ for (let x = 0; x < imgPdata.length; x++) {
     casualPvpSum += tempValue!;
     casualTPvp!.textContent = casualPvpSum.toString();
 }
+
+// ADMIN COLORS
+const adminColor = document.querySelector('.admin-color') as HTMLElement;
+const adminBorder = document.querySelector('.admin-border') as HTMLElement;
+const adminName = document.querySelector('.admin-name') as HTMLElement;
+
+
+function changeColor() {
+    let colorR = Math.ceil(Math.random() * 255)
+    let colorG = Math.ceil(Math.random() * 255)
+    let colorB = Math.ceil(Math.random() * 255)
+    let color = `rgb(${colorR},${colorG},${colorB})`
+    adminColor.style.color = color;
+    adminBorder.style.borderColor = color;
+    adminName.style.color = color;
+    console.log(color)
+}
+
+setInterval(changeColor, 500)
+
