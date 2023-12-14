@@ -267,15 +267,10 @@ const userData_JapanN: Array<playerInfo> = [
 ]
 const userData_RomeN: Array<playerInfo> = [
     {
-        player: 'E7S4',
-        wave: '49',
-        src: 'https://www.twitch.tv/videos/1963898798',
-        date: "10/29/2023"
-    },
-    {
         player: 'PheaktraCapo',
         wave: '35',
         src: 'https://www.youtube.com/watch?v=W4Si4I8kVt4&ab_channel=GamingHouse-byCAPO',
+        date: "9/30/2023"
     },
     {
         player: 'ebabyz',
