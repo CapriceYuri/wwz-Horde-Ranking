@@ -428,9 +428,38 @@ a {
     transition: 500ms ease-in-out;
 }
 
-// KIMIKO BG
-.test {
-    background-image: url('../images/kimikobg.png');
+// CARD BG
+
+.kimiko,
+.vanguard,
+.aftermath,
+.daniela,
+.kimiko2,
+.jinx {
     background-position: center;
     background-size: cover;
+}
+
+.kimiko {
+    background-image: url('/images/kimikobg.png');
+}
+
+.kimiko2 {
+    background-image: url('/images/kimikobg2.png');
+}
+
+.daniela {
+    background-image: url('/images/danielabg.png');
+}
+
+.vanguard {
+    background-image: url('/images/vgbg.png');
+}
+
+.aftermath {
+    background-image: url('/images/aftermathbg.png');
+}
+
+.jinx {
+    background-image: url('/images/jinxbg.png');
 }
