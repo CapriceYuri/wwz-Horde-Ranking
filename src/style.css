@@ -362,3 +362,9 @@ a {
 .admin-name {
   transition: 500ms ease-in-out;
 }
+
+.test {
+  background-image: url("../images/kimikobg.png");
+  background-position: center;
+  background-size: cover;
+}
