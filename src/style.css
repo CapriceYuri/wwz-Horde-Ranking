@@ -314,7 +314,7 @@ a {
 }
 
 .purple {
-  color: #9370DB;
+  color: #EE82EE;
 }
 
 .purple-border {
@@ -357,10 +357,25 @@ a {
   border-color: #FFD700;
 }
 
+.green {
+  color: #32de84;
+}
+
+.green-border {
+  border-color: #32de84;
+}
+
 .admin-color,
 .admin-border,
 .admin-name {
   transition: 500ms ease-in-out;
+}
+
+.focus {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: inline-block;
+  border-radius: 10px;
 }
 
 .kimiko,
@@ -368,7 +383,16 @@ a {
 .aftermath,
 .daniela,
 .kimiko2,
-.jinx {
+.jinx,
+.tashaun,
+.bunko,
+.sofia,
+.hiroji,
+.sergei,
+.marine,
+.dina,
+.angel,
+.horde {
   background-position: center;
   background-size: cover;
 }
@@ -395,4 +419,40 @@ a {
 
 .jinx {
   background-image: url("../images/jinxbg.png");
+}
+
+.tashaun {
+  background-image: url("../images/tashaunbg.png");
+}
+
+.bunko {
+  background-image: url("../images/bunkobg.png");
+}
+
+.sofia {
+  background-image: url("../images/sofiabg.png");
+}
+
+.hiroji {
+  background-image: url("../images/hirojibg.png");
+}
+
+.sergei {
+  background-image: url("../images/sergeibg.png");
+}
+
+.marine {
+  background-image: url("../images/marinebg.png");
+}
+
+.dina {
+  background-image: url("../images/dinabg.png");
+}
+
+.angel {
+  background-image: url("../images/angelbg.png");
+}
+
+.horde {
+  background-image: url("../images/hordebg.png");
 }
