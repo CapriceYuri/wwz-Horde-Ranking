@@ -378,35 +378,29 @@ a {
   border-radius: 10px;
 }
 
-.kimiko,
-.vanguard,
-.aftermath,
-.aftermath2,
-.aftermath3,
-.aftermath4,
-.daniela,
-.kimiko2,
-.jinx,
-.tashaun,
-.bunko,
-.sofia,
-.hiroji,
-.sergei,
-.marine,
-.dina,
-.angel,
-.horde,
 .kokak,
-.horde2,
-.horde3,
-.horde4,
-.horde5,
-.eloise,
-.judd,
-.ethan,
-.raoul {
+.bg1,
+.bg2,
+.bg3,
+.bg4 {
   background-position: center;
   background-size: cover;
+}
+
+.bg1 {
+  background-image: url("../images/bg1.png");
+}
+
+.bg2 {
+  background-image: url("../images/bg2.png");
+}
+
+.bg3 {
+  background-image: url("../images/bg3.png");
+}
+
+.bg4 {
+  background-image: url("../images/bg4.png");
 }
 
 .kokak {
