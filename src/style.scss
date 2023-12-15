@@ -447,6 +447,9 @@ a {
 .kimiko,
 .vanguard,
 .aftermath,
+.aftermath2,
+.aftermath3,
+.aftermath4,
 .daniela,
 .kimiko2,
 .jinx,
@@ -466,7 +469,8 @@ a {
 .horde5,
 .eloise,
 .judd,
-.ethan {
+.ethan,
+.raoul {
     background-position: center;
     background-size: cover;
 }
@@ -489,6 +493,18 @@ a {
 
 .aftermath {
     background-image: url('../images/aftermathbg.png');
+}
+
+.aftermath2 {
+    background-image: url('../images/aftermathbg2.png');
+}
+
+.aftermath3 {
+    background-image: url('../images/aftermathbg3.png');
+}
+
+.aftermath4 {
+    background-image: url('../images/aftermathbg4.png');
 }
 
 .jinx {
@@ -537,6 +553,10 @@ a {
 
 .ethan {
     background-image: url('../images/ethanbg.png');
+}
+
+.raoul {
+    background-image: url('../images/raoulbg.png');
 }
 
 .horde {
