@@ -392,7 +392,15 @@ a {
 .marine,
 .dina,
 .angel,
-.horde {
+.horde,
+.kokak,
+.horde2,
+.horde3,
+.horde4,
+.horde5,
+.eloise,
+.judd,
+.ethan {
   background-position: center;
   background-size: cover;
 }
@@ -453,6 +461,38 @@ a {
   background-image: url("../images/angelbg.png");
 }
 
+.eloise {
+  background-image: url("../images/eloisebg.png");
+}
+
+.judd {
+  background-image: url("../images/juddbg.png");
+}
+
+.ethan {
+  background-image: url("../images/ethanbg.png");
+}
+
 .horde {
   background-image: url("../images/hordebg.png");
+}
+
+.horde2 {
+  background-image: url("../images/hordebg2.png");
+}
+
+.horde3 {
+  background-image: url("../images/hordebg3.png");
+}
+
+.horde4 {
+  background-image: url("../images/hordebg4.png");
+}
+
+.horde5 {
+  background-image: url("../images/hordebg5.png");
+}
+
+.kokak {
+  background-image: url("../images/kokakbg.png");
 }
