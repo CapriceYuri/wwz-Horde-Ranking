@@ -382,7 +382,8 @@ a {
 .bg1,
 .bg2,
 .bg3,
-.bg4 {
+.bg4,
+.bg5 {
   background-position: center;
   background-size: cover;
 }
@@ -401,6 +402,10 @@ a {
 
 .bg4 {
   background-image: url("../images/bg4.png");
+}
+
+.bg5 {
+  background-image: url("../images/bg5.png");
 }
 
 .kokak {
