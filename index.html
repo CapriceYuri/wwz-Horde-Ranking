@@ -50,10 +50,10 @@
     <div class="d-flex justify-content-center my-4">
         <div class="btn-group" role="group2" aria-label="horde2">
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradioG">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradioG" disabled>
             <label class="btn btn-outline-light" for="btnradioG">HORDE GALLERY</label>
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradioP">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradioP" disabled>
             <label class="btn btn-outline-light" for="btnradioP">PVP / RUN GALLERY</label>
         </div>
     </div>
@@ -257,411 +257,354 @@
             <div>
                 <div class="text-light h2 d-flex justify-content-center align-items-center my-4 font-monospace">HORDE LEADERBOARD</div>
             </div>
-            <table class="table table-sm table-borderless rounded-5 table-dark">
-                <thead class="text-center">
-                    <tr class="align-middle font-monospace fs-5">
-                        <th scope="col" class="text-light">MAP</th>
-                        <th scope="col" class="text-light">SQUAD</th>
-                        <th scope="col" class="text-light">Wave</th>
-                    </tr>
-                </thead>
-                <tbody class="font-monospace">
-                    <tr class="align-middle text-center">
-                        <td class="text-danger">XL TOKYO (H)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_xltH"></span></td>
-                        <td id="xltHV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-danger">XL ROME (H)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_xlrH"></span>
-                        </td>
-                        <td id="xlrHV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-danger">SOUTH KOREA (H)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_skH"></span>
-                        </td>
-                        <td id="skHV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-danger">NEW YORK (H)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_nyH"></span>
-                        </td>
-                        <td id="nyHV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-danger">JERUSALEM (H)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_jH"></span>
-                        </td>
-                        <td id="jHV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-warning">XL TOKYO (N)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_xltN"></span></td>
-                        <td id="xltNV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-warning">XL ROME (N)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_xlrN"></span></td>
-                        <td id="xlrNV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-warning">SOUTH KOREA (N)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_skN"></span></td>
-                        <td id="skNV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-warning">NEW YORK (N)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_nyN"></span></td>
-                        <td id="nyNV"></td>
-                    </tr>
-                    <tr class="align-middle text-center">
-                        <td class="text-warning">JERUSALEM (N)</td>
-                        <td><img src="" class="skull"> <span id="leaderboard_jN"></span></td>
-                        <td id="jNV"></td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+        <table class="table table-borderless table-dark">
+            <thead class="text-center">
+                <tr class="align-middle font-monospace fs-5">
+                    <th scope="col" class="text-light">MAP</th>
+                    <th scope="col" class="text-light">SQUAD</th>
+                    <th scope="col" class="text-light">Wave</th>
+                </tr>
+            </thead>
+            <tbody class="font-monospace">
+                <tr class="align-middle text-center">
+                    <td class="text-danger">XL TOKYO (H)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_xltH"></span></td>
+                    <td id="xltHV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-danger">XL ROME (H)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_xlrH"></span>
+                    </td>
+                    <td id="xlrHV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-danger">SOUTH KOREA (H)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_skH"></span>
+                    </td>
+                    <td id="skHV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-danger">NEW YORK (H)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_nyH"></span>
+                    </td>
+                    <td id="nyHV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-danger">JERUSALEM (H)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_jH"></span>
+                    </td>
+                    <td id="jHV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-warning">XL TOKYO (N)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_xltN"></span></td>
+                    <td id="xltNV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-warning">XL ROME (N)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_xlrN"></span></td>
+                    <td id="xlrNV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-warning">SOUTH KOREA (N)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_skN"></span></td>
+                    <td id="skNV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-warning">NEW YORK (N)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_nyN"></span></td>
+                    <td id="nyNV"></td>
+                </tr>
+                <tr class="align-middle text-center">
+                    <td class="text-warning">JERUSALEM (N)</td>
+                    <td><img src="" class="skull"> <span id="leaderboard_jN"></span></td>
+                    <td id="jNV"></td>
+                </tr>
+            </tbody>
+        </table>
 
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-lg-6 col-12 mx-auto">
-                        <div class="d-flex flex-column flex-md-row my-3 align-items-center justify-content-center">
+                <div class="col-lg-6 col-12 mx-auto">
+                    <div class="d-flex flex-column flex-md-row my-3 align-items-center justify-content-center">
 
-                            <div class="list-group">
+                        <div class="list-group">
 
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <h6 class="mb-0"><span class="text-danger">XL TOKYO (H)</span> record held for <span class="timeago"></span> days.</h6>
-                                        </div>
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <h6 class="mb-0"><span class="text-danger">XL TOKYO (H)</span> record held for <span class="timeago"></span> days.</h6>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
                                         <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-danger">XL ROME (H)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-danger">SOUTH KOREA (H)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-danger">NEW YORK (H)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-danger">JERUSALEM (H)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
+                                            <h6 class="mb-0"><span class="text-danger">XL ROME (H)</span> record held for <span class="timeago"></span> days.</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mx-auto">
-                        <div class="d-flex flex-column flex-md-row my-3 align-items-center justify-content-center">
-
-                            <div class="list-group">
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info2.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
                                         <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-warning">XL TOKYO (N)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info2.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-warning">XL ROME (N)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info2.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-warning">SOUTH KOREA (N)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info2.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-warning">NEW YORK (N)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
-                                    <img src="images/info2.png" class="rounded-circle flex-shrink-0">
-                                    <div class="d-flex gap-2 w-100 justify-content-between">
-                                        <div>
-                                            <div>
-                                                <h6 class="mb-0"><span class="text-warning">JERUSALEM (N)</span> record held for <span class="timeago"></span> days.</h6>
-                                            </div>
+                                            <h6 class="mb-0"><span class="text-danger">SOUTH KOREA (H)</span> record held for <span class="timeago"></span> days.</h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-danger">NEW YORK (H)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <!-- CARD - TEAMS -->
-
-            <div class="container mt-5">
-                <h2 class=" text-warning text-center font-monospace tracking">Maobai Pro Team <i class="bi bi-trophy"><i class="bi bi-trophy"></i><i class="bi bi-trophy"></i></i></h2>
-                <div class="row gap-1 justify-content-center">
-
-                    <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
-                        <img src="images/maobai.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
-                        <div class="card-body text-center text-warning px-0">
-                            <h5 class="card-title focus">貓白</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">经验丰富<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://space.bilibili.com/35567200" target="_blank"><img src="images/bilibili.png"></a><a href="https://www.youtube.com/@maobai1999" target="_blank" class="ms-1"><img src="images/youtube.png"></a></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                    <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
-                        <img src="images/maobai-team.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
-                        <div class="card-body text-center text-warning px-0">
-                            <h5 class="card-title focus">前夜Sammi</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">最佳辅C<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://space.bilibili.com/3493091025619499" target="_blank"><img src="images/bilibili.png"></a></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                    <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
-                        <img src="images/maobai-team2.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
-                        <div class="card-body text-center text-warning px-0">
-                            <h5 class="card-title focus">fachen128</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">最强输出<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">KING <i class="bi bi-suit-spade-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                            <div class="my-1"><a href="https://space.bilibili.com/93003974" target="_blank"><img src="images/bilibili.png"></a></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container my-5">
-                <h2 class=" green text-center font-monospace tracking">Horde Legends Team <i class="bi bi-trophy"></i></h2>
-                <div class="row gap-1 justify-content-center">
-
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player1.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">Wintersky</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://www.twitch.tv/wintersky_legendary" target="_blank"><img src="images/twitch.png"></a></div>
-                        </div>
-                    </div>
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player4.jpg" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">gogu7382</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">QUEEN <i class="bi bi-heart-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                            <div class="my-1"><a href="https://www.twitch.tv/gogu7382" target="_blank"><img src="images/twitch.png"></a></div>
-                        </div>
-                    </div>
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player5.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">XxFriction</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto">I Am A Cat<img src="images/greenthunder.gif" width="24" height="auto"></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player2.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">Crispokringle</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto">Shoot Gud<img src="images/greenthunder.gif" width="24" height="auto"></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player3.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">HiRUnknown</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">KING <i class="bi bi-diamond-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                        </div>
-                    </div>
-                    <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
-                        <img src="images/HLT-player6.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center green px-0">
-                            <h5 class="card-title focus">YupItsMeh</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD-CONTRIBUTORS -->
-
-            <div class="container my-5">
-                <h2 class="blue text-center font-monospace tracking"><img src="images/bluefire.gif" width="32" height="auto">Contributors<img src="images/bluefire.gif" width="32" height="auto"></h2>
-                <div class="row gap-1 justify-content-center">
-
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/LW-sp.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">SiberianPsych0</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo (H)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo Speedrun</div>
-                            <div class="card-text my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/player.gif" width="32" height="32"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://www.youtube.com/@siberianpsych0" target="_blank"><img src="images/youtube.png"></a></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
-                    </div>
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/LW-d3v.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">xD3viLz</h5>
-                            <div class="card-text my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/devil.gif" width="32" height="32"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="my-1">
-                                <a href="https://www.youtube.com/@xD3viLz/videos" target="_blank"><img src="images/youtube.png"></a>
-                                <a href="https://www.twitch.tv/xd3vilzx_" target="_blank"><img src="images/twitch.png" class="ms-1"></a>
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-danger">JERUSALEM (H)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/LW-aba.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">ABA</h5>
-                            <div class="card-text my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/duck.gif" width="32" height="32"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">KING <i class="bi bi-suit-spade-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                            <div class="my-1"><a href="https://www.youtube.com/@yipzai2mark" target="_blank"><img src="images/youtube.png"></a></div>
-                        </div>
-                    </div>
 
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/modA.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">Aedonis</h5>
-                            <div class="my-1"><img src="images/ty.gif" width="44" height="auto"></div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto">Aim Head<img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="pinkT fw-bold my-1"><img src="images/kimiko.png" width="32" height="auto" class="rounded-circle"> Kimiko</div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/modT.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">ACE 𝔗𝔦𝔫𝔞</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo Speedrun</div>
-                            <div class="my-1"><img src="images/jumpR.gif" width="32" height="32"></div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto">Mew Dedicant<img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="pinkT fw-bold my-1"><img src="images/kimiko.png" width="32" height="auto" class="rounded-circle"> Kimiko</div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">QUEEN <i class="bi bi-suit-club-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                            <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">QUEEN <i class="bi bi-diamond-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
+                <div class="col-lg-6 col-12 mx-auto">
+                    <div class="d-flex flex-column flex-md-row my-3 align-items-center justify-content-center">
+
+                        <div class="list-group">
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info2.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-warning">XL TOKYO (N)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info2.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-warning">XL ROME (N)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info2.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-warning">SOUTH KOREA (N)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info2.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-warning">NEW YORK (N)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item d-flex align-items-center gap-1 py-3 transparent text-light" aria-current="true">
+                                <img src="images/info2.png" class="rounded-circle flex-shrink-0">
+                                <div class="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+                                        <div>
+                                            <h6 class="mb-0"><span class="text-warning">JERUSALEM (N)</span> record held for <span class="timeago"></span> days.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/modM.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">Mewtality</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo Speedrun</div>
-                            <div class="my-1"><img src="images/jumpL.gif" width="32" height="32"></div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto">Tina Dedicant<img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="pinkT fw-bold my-1"><img src="images/kimiko.png" width="32" height="auto" class="rounded-circle"> Kimiko</div>
-                            <div><i class="bi bi-check-circle-fill green"></i></div>
-                        </div>
                     </div>
-
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/con1.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">WenHalloWen</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (N)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://www.youtube.com/@WenHalloWen" target="_blank"><img src="images/youtube.png"></a></div>
-                        </div>
-                    </div>
-
-                    <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
-                        <img src="images/con2.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
-                        <div class="card-body text-center blue px-0">
-                            <h5 class="card-title focus">Senku_Jo</h5>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo (N)</div>
-                            <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (N)</div>
-                            <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
-                            <div class="my-1"><a href="https://www.youtube.com/@Senku_Jo" target="_blank"><img src="images/youtube.png"></a></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+        </div>
 
-            <!-- CARD - COMMUNITY -->
+        <!-- CARD - TEAMS -->
 
-            <div class="container my-5">
+        <div class="container mt-5">
+            <h2 class=" text-warning text-center font-monospace tracking">Maobai Pro Team <i class="bi bi-trophy"><i class="bi bi-trophy"></i><i class="bi bi-trophy"></i></i></h2>
+            <div class="row gap-1 justify-content-center">
+
+                <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
+                    <img src="images/maobai.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
+                    <div class="card-body text-center text-warning px-0">
+                        <h5 class="card-title focus">貓白</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">经验丰富<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://space.bilibili.com/35567200" target="_blank"><img src="images/bilibili.png"></a><a href="https://www.youtube.com/@maobai1999" target="_blank" class="ms-1"><img src="images/youtube.png"></a></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+                <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
+                    <img src="images/maobai-team.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
+                    <div class="card-body text-center text-warning px-0">
+                        <h5 class="card-title focus">前夜Sammi</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">最佳辅C<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://space.bilibili.com/3493091025619499" target="_blank"><img src="images/bilibili.png"></a></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+                <div class="card bg1 col-lg-3 col-5 border-warning border-2 rounded-5 px-2 maobai-card">
+                    <img src="images/maobai-team2.png" width="100px" height="100px" class="mx-auto my-1 rounded-pill pulse">
+                    <div class="card-body text-center text-warning px-0">
+                        <h5 class="card-title focus">fachen128</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> South Korea (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (H)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/orangeredthunder.gif" width="24" height="auto">最强输出<img src="images/orangeredthunder.gif" width="24" height="auto"></div>
+                        <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">KING <i class="bi bi-suit-spade-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
+                        <div class="my-1"><a href="https://space.bilibili.com/93003974" target="_blank"><img src="images/bilibili.png"></a></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h2 class=" green text-center font-monospace tracking">Horde Legends Team <i class="bi bi-trophy"></i></h2>
+            <div class="row gap-1 justify-content-center">
+
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player1.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">Wintersky</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://www.twitch.tv/wintersky_legendary" target="_blank"><img src="images/twitch.png"></a></div>
+                    </div>
+                </div>
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player4.jpg" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">gogu7382</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
+                        <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">QUEEN <i class="bi bi-heart-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
+                        <div class="my-1"><a href="https://www.twitch.tv/gogu7382" target="_blank"><img src="images/twitch.png"></a></div>
+                    </div>
+                </div>
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player5.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">XxFriction</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto">I Am A Cat<img src="images/greenthunder.gif" width="24" height="auto"></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player2.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">Crispokringle</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto">Shoot Gud<img src="images/greenthunder.gif" width="24" height="auto"></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player3.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">HiRUnknown</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
+                        <div class="red fw-bold my-1"><img src="images/redspark.gif" width="32" height="auto">KING <i class="bi bi-diamond-fill"></i><img src="images/redspark.gif" width="28" height="auto"></div>
+                    </div>
+                </div>
+                <div class="card bg2 col-lg-3 col-5 green-border border-2 rounded-5 px-2 HLT-card">
+                    <img src="images/HLT-player6.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center green px-0">
+                        <h5 class="card-title focus">YupItsMeh</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Rome (H)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/greenthunder.gif" width="24" height="auto"><img src="images/greenthunder.gif" width="24" height="auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD-CONTRIBUTORS -->
+
+        <div class="container my-5">
+            <h2 class="blue text-center font-monospace tracking"><img src="images/bluefire.gif" width="32" height="auto">Record Holders<img src="images/bluefire.gif" width="32" height="auto"></h2>
+            <div class="row gap-1 justify-content-center">
+
+                <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
+                    <img src="images/LW-sp.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center blue px-0">
+                        <h5 class="card-title focus">SiberianPsych0</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo (H)</div>
+                        <div class="card-text my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/player.gif" width="32" height="32"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://www.youtube.com/@siberianpsych0" target="_blank"><img src="images/youtube.png"></a></div>
+                        <div><i class="bi bi-check-circle-fill green"></i></div>
+                    </div>
+                </div>
+
+                <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
+                    <img src="images/con1.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center blue px-0">
+                        <h5 class="card-title focus">WenHalloWen</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> New York (N)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://www.youtube.com/@WenHalloWen" target="_blank"><img src="images/youtube.png"></a></div>
+                    </div>
+                </div>
+
+                <div class="card bg3 col-lg-3 col-5 blue-border border-2 rounded-5 px-2 cont-card">
+                    <img src="images/con2.png" width="100px" height="100px" class="mx-auto my-2 rounded-pill pulse">
+                    <div class="card-body text-center blue px-0">
+                        <h5 class="card-title focus">Senku_Jo</h5>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Tokyo (N)</div>
+                        <div class="my-1 text-warning fw-bold fst-italic"><img src="images/trophy.gif" width="24" height="24"> Jerusalem (N)</div>
+                        <div class="card-text purple fw-bold my-1"><img src="images/lightbluethunder.gif" width="24" height="auto"><img src="images/lightbluethunder.gif" width="24" height="auto"></div>
+                        <div class="my-1"><a href="https://www.youtube.com/@Senku_Jo" target="_blank"><img src="images/youtube.png"></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CARD - COMMUNITY -->
+
+        <!-- <div class="container my-5">
                 <h2 class="gold text-center font-monospace tracking"><img src="images/orangefire.gif" width="32" height="auto">COMMUNITY<img src="images/orangefire.gif" width="32" height="auto"></h2>
                 <div class="row gap-1 justify-content-center">
 
@@ -747,22 +690,20 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
-            <div class="container my-5">
-                <h2 class="text-center font-monospace tracking admin-color"><img src="images/purplefire.gif" width="32" height="auto">Contact<img src="images/purplefire.gif" width="32" height="auto"></h2>
-                <div class="row gap-1 justify-content-center">
+        <div class="container my-5">
+            <h2 class="text-center font-monospace tracking admin-color"><img src="images/purplefire.gif" width="32" height="auto">Contact<img src="images/purplefire.gif" width="32" height="auto"></h2>
+            <div class="row gap-1 justify-content-center">
 
-                    <div class="card bg5 col-lg-6 col-10 admin-border rounded-pill border-2 ">
-                        <img src="images/admin.png" width="100px" height="100px" class="mx-auto my-2 rounded-circle pulse">
-                        <div class="card-body text-center px-0">
-                            <div class="card-text admin-name fw-bold my-1"><img src="images/purplethunder.gif" width="24" height="auto">Discord: capriceyuri<img src="images/purplethunder.gif" width="24" height="auto"></div>
-                        </div>
+                <div class="card bg5 col-lg-6 col-10 admin-border rounded-pill border-2 ">
+                    <img src="images/admin.png" width="100px" height="100px" class="mx-auto my-2 rounded-circle pulse">
+                    <div class="card-body text-center px-0">
+                        <div class="card-text admin-name fw-bold my-1"><img src="images/purplethunder.gif" width="24" height="auto">Discord: capriceyuri<img src="images/purplethunder.gif" width="24" height="auto"></div>
                     </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 

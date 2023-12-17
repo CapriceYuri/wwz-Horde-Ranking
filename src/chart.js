@@ -131,27 +131,27 @@ pgMew.setAttribute("style", `width:${100 * (v_mew / v_total)}%`)
 
 
 // TESTING REORDER CARD 
-let shuffle1 = function () {
-    [].slice.call(document.querySelectorAll(".maobai-card")).filter(function (_e) {
-        _e.style.order = (Math.floor(Math.random() * (10) + 1));
-    });
-}
-let shuffle2 = function () {
-    [].slice.call(document.querySelectorAll(".HLT-card")).filter(function (_e) {
-        _e.style.order = (Math.floor(Math.random() * (10) + 1));
-    });
-}
-let shuffle3 = function () {
-    [].slice.call(document.querySelectorAll(".cont-card")).filter(function (_e) {
-        _e.style.order = (Math.floor(Math.random() * (10) + 1));
-    });
-}
-let shuffle4 = function () {
-    [].slice.call(document.querySelectorAll(".comm-card")).filter(function (_e) {
-        _e.style.order = (Math.floor(Math.random() * (10) + 1));
-    });
-}
-shuffle1()
-shuffle2()
-shuffle3()
-shuffle4()
+// let shuffle1 = function () {
+//     [].slice.call(document.querySelectorAll(".maobai-card")).filter(function (_e) {
+//         _e.style.order = (Math.floor(Math.random() * (10) + 1));
+//     });
+// }
+// let shuffle2 = function () {
+//     [].slice.call(document.querySelectorAll(".HLT-card")).filter(function (_e) {
+//         _e.style.order = (Math.floor(Math.random() * (10) + 1));
+//     });
+// }
+// let shuffle3 = function () {
+//     [].slice.call(document.querySelectorAll(".cont-card")).filter(function (_e) {
+//         _e.style.order = (Math.floor(Math.random() * (10) + 1));
+//     });
+// }
+// let shuffle4 = function () {
+//     [].slice.call(document.querySelectorAll(".comm-card")).filter(function (_e) {
+//         _e.style.order = (Math.floor(Math.random() * (10) + 1));
+//     });
+// }
+// shuffle1()
+// shuffle2()
+// shuffle3()
+// shuffle4()
