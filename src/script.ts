@@ -610,6 +610,7 @@ for (let x = 0; x < imgPdata.length; x++) {
 // ADMIN COLORS
 const adminColor = document.querySelector('.admin-color') as HTMLElement;
 const adminBorder = document.querySelector('.admin-border') as HTMLElement;
+const adminHead = document.querySelector('.admin-head') as HTMLElement;
 const adminName = document.querySelector('.admin-name') as HTMLElement;
 
 
@@ -621,7 +622,7 @@ function changeColor() {
     adminColor.style.color = color;
     adminBorder.style.borderColor = color;
     adminName.style.color = color;
-    console.log(color)
+    adminHead.style.color = color;
 }
 
 setInterval(changeColor, 500)

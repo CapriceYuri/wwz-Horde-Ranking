@@ -520,6 +520,7 @@ for (let x = 0; x < imgPdata.length; x++) {
 // ADMIN COLORS
 const adminColor = document.querySelector('.admin-color');
 const adminBorder = document.querySelector('.admin-border');
+const adminHead = document.querySelector('.admin-head');
 const adminName = document.querySelector('.admin-name');
 function changeColor() {
     let colorR = Math.ceil(Math.random() * 255);
@@ -529,6 +530,6 @@ function changeColor() {
     adminColor.style.color = color;
     adminBorder.style.borderColor = color;
     adminName.style.color = color;
-    console.log(color);
+    adminHead.style.color = color;
 }
 setInterval(changeColor, 500);
