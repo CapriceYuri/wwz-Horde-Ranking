@@ -322,25 +322,6 @@ a {
     }
 }
 
-.tracking {
-    animation: tracking-in-expand 3s linear infinite alternate-reverse both;
-}
-
-@keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 // PVP/RUN GALLERY
 .p-count-num {
     color: #E62020;
@@ -437,11 +418,9 @@ a {
     border-radius: 10px;
 }
 
-.kokak,
 .bg1,
 .bg2,
 .bg3,
-.bg4,
 .bg5 {
     background-position: center;
     background-size: cover;
@@ -459,14 +438,6 @@ a {
     background-image: url('../images/bg3.png');
 }
 
-.bg4 {
-    background-image: url('../images/bg4.png');
-}
-
 .bg5 {
     background-image: url('../images/bg5.png');
-}
-
-.kokak {
-    background-image: url('../images/kokakbg.png');
 }

@@ -359,7 +359,7 @@ for (let i = 0; i < leaderboardHardWave.length; i++) {
 function countUpRecord() {
     leaderboardHardWave.forEach((array) => {
         const target = +array.textContent!;
-        const step = target / 110;
+        const step = target / 50;
         array.textContent = '0';
 
         const updateCountRecord = () => {
@@ -403,7 +403,7 @@ for (let x = 0; x < timeAgo.length; x++) {
 function countUp() {
     timeAgo.forEach((array) => {
         const target = +array.textContent!;
-        const step = target / 75;
+        const step = target / 50;
         array.textContent = '0';
 
         const updateCount = () => {
