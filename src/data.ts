@@ -283,6 +283,12 @@ const userData_RomeN: Array<playerInfo> = [
         src: 'https://www.youtube.com/watch?v=SeG1MoI8ByA&ab_channel=GAMEXIA',
     },
     {
+        player: 'oi_Mara',
+        wave: '46',
+        src: 'https://www.youtube.com/watch?v=d-10-B0bujE&t=5052s',
+        date: "12/20/2023"
+    },
+    {
         player: 'Teee-I',
         wave: '26',
         src: 'https://www.youtube.com/watch?v=r5KWOwO2ol0&ab_channel=Tee-I',
