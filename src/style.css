@@ -357,6 +357,7 @@ a {
 .bg1,
 .bg2,
 .bg3,
+.bg4,
 .bg5 {
   background-position: center;
   background-size: cover;
@@ -373,10 +374,22 @@ a {
 .bg3 {
   background-image: url("../images/bg3.png");
 }
+
 .bg4 {
   background-image: url("../images/bg4.png");
 }
 
 .bg5 {
   background-image: url("../images/bg5.png");
+}
+
+.play-music {
+  display: inline;
+  position: fixed;
+  opacity: 40%;
+  font-size: 80px;
+  right: 0;
+  bottom: 0;
+  transform: translate(-80px);
+  cursor: pointer;
 }
