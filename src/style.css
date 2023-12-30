@@ -341,6 +341,14 @@ a {
   border-color: #32de84;
 }
 
+.pink-border {
+  border-color: #FF00FF;
+}
+
+.pink {
+  color: #F9629F;
+}
+
 .admin-color,
 .admin-border,
 .admin-name {
