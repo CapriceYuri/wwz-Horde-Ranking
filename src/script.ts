@@ -347,10 +347,11 @@ for (let i = 0; i < leaderboardHardWave.length; i++) {
     else if (parseInt(leaderboardHardWaveValue[i]) >= 70) {
         skullType[i].attributes[0].textContent = "images/redskull.png";
         skullType[i].classList.add("flick");
-        leaderboardHardWave[i].classList.add("h4", "text-bold", "text-danger")
+        leaderboardHardWave[i].classList.add("h3", "text-semibold", "text-danger")
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i]
     } else {
         skullType[i].attributes[0].value = "images/whiteskull.png";
+        leaderboardHardWave[i].classList.add("h5","text-info","fw-lighter")
         leaderboardHardWave[i].textContent = leaderboardHardWaveValue[i]
     }
 }
