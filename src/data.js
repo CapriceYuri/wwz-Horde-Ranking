@@ -1,6 +1,12 @@
 // HORDE HARD DIFFICULTY
 const userData_JapanH = [
     {
+        player: 'Maobai Pro Team',
+        wave: '90',
+        src: '#',
+        date: "1/07/2024"
+    },
+    {
         player: 'SiberianPsych0',
         wave: '57',
         src: 'https://www.youtube.com/watch?v=vPT_K6OQxbE&t=63s&ab_channel=SiberianPsych0',
