@@ -380,6 +380,20 @@ export { data };
 const imgData = [
     {
         imgAuthor: "Maobai",
+        imgUrl: "img16",
+        totalK: 156841,
+        totalS: 2592,
+        totalA: 5262,
+    },
+    {
+        imgAuthor: "Maobai",
+        imgUrl: "img15",
+        totalK: 143896,
+        totalS: 2230,
+        totalA: 6162,
+    },
+    {
+        imgAuthor: "Maobai",
         imgUrl: "img14",
         totalK: 151814,
         totalS: 2291,
