@@ -28,7 +28,6 @@
         <nav class="navbar bg-dark">
             <div class="container navbar-dark justify-content-center gap-4">
                 <div class="navbar-brand mx-auto text-warning"><i class="bi bi-h-square"></i><i class="bi bi-0-square"></i></i><i class="bi bi-r-square"></i><i class="bi bi-caret-right-square"></i><i class="bi bi-explicit"></i>
-                    <a href="https://capriceyuri.github.io/wwzAftermathExtreme/" class="font-monospace admin-color h6"><i class="bi bi-arrow-right-square ms-5"></i> TO EXTREME</a>
                 </div>
             </div>
         </nav>
@@ -665,7 +664,7 @@
                     <img src="images/admin.png" width="100px" height="100px" class="mx-auto my-2 rounded-circle pulse">
                     <div class="card-body text-center px-0">
                         <div class="card-text admin-name fw-bold my-1"><img src="images/lighting.gif" width="24" height="auto">Discord: capriceyuri<img src="images/lighting.gif" width="24" height="auto"></div>
-                        <div class="text-light font-monospace">Latest Update 12.29.23</div>
+                        <div class="text-light font-monospace">Latest Update 1.7.24</div>
                         <div class="text-warning font-monospace">Credits: Flaroh Illustration for Artworks</div>
                     </div>
                 </div>
@@ -918,10 +917,25 @@
         </div>
     </div>
 
-    <div class="text-danger play-music"><i class="bi bi-play-circle-fill play"></i></div>
-    <audio loop class="music-player">
-        <source src="images/bgmusic.mp3" type="audio/mpeg">
-    </audio>
+    <div type="button" class="btn admin-color menu-btn" data-bs-toggle="modal" data-bs-target="#menu">
+        <i class="bi bi-dice-6 spin d-block"></i>
+    </div>
+
+
+    <div class="modal fade" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-warning border-4">
+                <div class="modal-header text-bg-dark">
+                    <h1 class="modal-title mx-auto" id="menuLabel"><img src="images/menu.gif" width="100" height="auto"></h1>
+                </div>
+                <div class="modal-body text-center text-bg-dark menu-links">
+                    <div class="my-2"><a href="https://capriceyuri.github.io/WWZaftermath/" class="fw-semibold h4 link wobble">Classes & Perks</a></div>
+                    <div class="my-2"><a href="https://capriceyuri.github.io/wwzAftermathHorde/" class="fw-semibold h4 link wobble">Horde Ranking</a></div>
+                    <div class="my-2"><a href="https://capriceyuri.github.io/wwzAftermathExtreme/" class="fw-semibold h4 link wobble">Speedrun Ranking</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="w-75 mx-auto py-3 mt-5 border-top border-warning">
         <p class="text-center text-warning m-0">© 2024 CapriceYuri</p>

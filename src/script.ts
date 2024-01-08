@@ -627,20 +627,5 @@ function changeColor() {
 }
 
 setInterval(changeColor, 500)
-// BG MUSIV 
-const musicBtn = document.querySelector(".play-music") as HTMLElement
-const musicPlayer = document.querySelector(".music-player") as HTMLAudioElement;
-let state = true;
 
-musicBtn.addEventListener('click', () => {
-    if (state) {
-        musicBtn.innerHTML = `<i class="bi bi-pause-circle-fill"></i>`
-        musicPlayer.play();
-        state = false;
-    } else {
-        musicBtn.innerHTML = `<i class="bi bi-play-circle-fill play"></i>`
-        musicPlayer.pause();
-        state = true;
-    }
-})
 

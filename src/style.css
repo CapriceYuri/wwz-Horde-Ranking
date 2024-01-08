@@ -142,10 +142,10 @@ a {
 }
 
 .spin {
-  animation: spin 3s ease-in-out infinite both;
+  animation: rotate-center 4s linear infinite both;
 }
 
-@keyframes spin {
+@keyframes rotate-center {
   0% {
     transform: rotate(0);
   }
@@ -220,45 +220,6 @@ a {
   }
   75% {
     transform: translateX(-3px) rotate(-1.2deg);
-  }
-}
-.bounce {
-  animation: bounce-top 2s infinite alternate-reverse both;
-}
-
-@keyframes bounce-top {
-  0% {
-    transform: translateY(-12px);
-    animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-10px);
-    animation-timing-function: ease-in;
-  }
-  65% {
-    transform: translateY(-6px);
-    animation-timing-function: ease-in;
-  }
-  82% {
-    transform: translateY(-3px);
-    animation-timing-function: ease-in;
-  }
-  93% {
-    transform: translateY(-2px);
-    animation-timing-function: ease-in;
-  }
-  25%, 55%, 75%, 87% {
-    transform: translateY(2px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translateY(4px);
-    animation-timing-function: ease-out;
-    opacity: 1;
   }
 }
 .p-count-num {
@@ -391,13 +352,24 @@ a {
   background-image: url("../images/bg5.png");
 }
 
-.play-music {
-  display: inline;
+.link {
+  display: inline-block;
+}
+
+.link:hover {
+  scale: 1.25;
+  color: orangered;
+}
+
+.menu-btn {
+  font-size: 75px;
   position: fixed;
-  opacity: 40%;
-  font-size: 80px;
-  right: 0;
   bottom: 0;
-  transform: translate(-80px);
-  cursor: pointer;
+  right: 0;
+  opacity: 40%;
+  transform: translate(-100px, -100px);
+}
+
+.modal-open {
+  overflow: inherit !important;
 }
