@@ -26,6 +26,11 @@ const userData_JapanH = [
 ];
 const userData_RomeH = [
     {
+        player: 'Maobai Pro Team',
+        wave: '107',
+        src: 'images/RomeNR.png',
+    },
+    {
         player: 'Horde Legends Team',
         wave: '91',
         src: 'https://www.twitch.tv/videos/1956988311',
@@ -33,7 +38,7 @@ const userData_RomeH = [
         date: "10/21/2023"
     },
     {
-        player: 'Maobai Pro Team',
+        player: 'Maobai Pro Team #2',
         wave: '81',
         src: 'https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD',
         src2: 'https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD'
