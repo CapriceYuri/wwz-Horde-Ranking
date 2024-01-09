@@ -60,6 +60,7 @@ const userData_RomeH: Array<playerInfo> = [
         player: 'Maobai Pro Team',
         wave: '107',
         src: 'images/RomeNR.png',
+        date: "1/9/2024"
     },
     {
         player: 'Horde Legends Team',
