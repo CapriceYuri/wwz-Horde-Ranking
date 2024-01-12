@@ -190,7 +190,7 @@ const userData_NYH: Array<playerInfo> = [
         player: 'Maobai Pro Team',
         wave: '95',
         src: 'https://www.bilibili.com/video/BV1S5411i7Kv/',
-        date: "1/11/2023"
+        date: "1/11/2024"
     },
     {
         player: 'SiberianPsych0',
