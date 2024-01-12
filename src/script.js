@@ -372,8 +372,8 @@ saberprank.setAttribute("src", "images/saber.png");
 const saberprankName = document.createElement("span");
 saberprankName.textContent = " Saber Interactive";
 saberprankName.classList.add("text-warning");
-nyH.childNodes[5].childNodes[1].appendChild(saberprank);
-nyH.childNodes[5].childNodes[1].appendChild(saberprankName);
+nyH.childNodes[6].childNodes[1].appendChild(saberprank);
+nyH.childNodes[6].childNodes[1].appendChild(saberprankName);
 function addGalleyImage(obj) {
     const tempCol = document.createElement("div");
     tempCol.classList.add("col-xl-6", "col-12", "p-2");

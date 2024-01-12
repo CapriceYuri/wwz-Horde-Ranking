@@ -426,8 +426,8 @@ const saberprankName = document.createElement("span")
 saberprankName.textContent = " Saber Interactive"
 saberprankName.classList.add("text-warning")
 
-nyH.childNodes[5].childNodes[1].appendChild(saberprank);
-nyH.childNodes[5].childNodes[1].appendChild(saberprankName);
+nyH.childNodes[6].childNodes[1].appendChild(saberprank);
+nyH.childNodes[6].childNodes[1].appendChild(saberprankName);
 
 // Script for BOX GALLERY 
 

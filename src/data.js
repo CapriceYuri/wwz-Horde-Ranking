@@ -149,10 +149,16 @@ const userData_SKH = [
 ];
 const userData_NYH = [
     {
-        player: 'Maobai Pro Team',
+        player: 'Maobai Pro Team #2',
         wave: '82',
         src: 'https://www.youtube.com/watch?v=KCjRrQSbEWQ',
         date: "9/23/2023"
+    },
+    {
+        player: 'Maobai Pro Team',
+        wave: '95',
+        src: 'https://www.bilibili.com/video/BV1S5411i7Kv/',
+        date: "1/11/2023"
     },
     {
         player: 'SiberianPsych0',
